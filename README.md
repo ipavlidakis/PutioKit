@@ -2,6 +2,13 @@
 
 A simple wrapper around put.io api. PutioKit wraps all available endpoints and provides an easy and typesafe way to interact with it.
 
+# Installation
+
+## SPM
+
+Add the following in the _dependencies_ array in Package.swift
+> .package(url: "https://github.com/ipavlidakis/PutioKit.git", from: "1.0.0"),
+
 # Architecture
 
 The kit is splitting the available endpoints from the API into seperate services: Currently you can find the following available services:
