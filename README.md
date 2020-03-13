@@ -28,6 +28,7 @@ The `ApiClientModel` struct represents your put.io application. It contains valu
 * id
 * secret
 * name
+
 The `ApiClientModel` is used to fill in the required information to communicate with the API.
 
 ## NetworkHandling
