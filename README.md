@@ -53,7 +53,7 @@ The instance that will passed to the service will be used to as a provider for t
 
 Ilias Pavlidakis
 - [mail](ipavlidakis@gmail.com)
-- twitter](https://twitter.com/3liaspav)
+- [twitter](https://twitter.com/3liaspav)
 
 # License
 
