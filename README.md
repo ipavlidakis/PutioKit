@@ -1,6 +1,12 @@
 # PutioKit
 
 A simple wrapper around put.io api. PutioKit wraps all available endpoints and provides an easy and typesafe way to interact with it.
+Supports:
+- macOS(>=10.15)
+- iOS(>=13.0)
+- iPadOS(>=13.0)
+- watchOS(>=6.0) 
+- tvOS(>=13.0)
 
 # Installation
 
