@@ -1,5 +1,4 @@
 # PutioKit
-- - - -
 
 A simple wrapper around put.io api. PutioKit wraps all available endpoints and provides an easy and typesafe way to interact with it.
 
@@ -41,8 +40,6 @@ The instance that will passed to the services will be used to perform all the ne
 
 The instance that will passed to the service will be used to as a provider for the access token, required to communicate with the API
 
-- - - -
-
 # Next Steps
 - [ ] Write documentation
 - [ ] Provide a playground app
@@ -52,13 +49,11 @@ The instance that will passed to the service will be used to as a provider for t
 - [ ] Add progress on uploadTasks
 - [ ] Add progress on dataTasks
 
-- - - -
-
 # Author
 
-Ilias Pavlidakis, [mail](ipavlidakis@gmail.com), [twitter](https://twitter.com/3liaspav)
-
-- - - -
+Ilias Pavlidakis
+- [mail](ipavlidakis@gmail.com)
+- twitter](https://twitter.com/3liaspav)
 
 # License
 
