@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "Put.io-Kit",
+    name: "PutioKit",
     platforms: [.iOS(.v13), .macOS(.v10_15), .tvOS(.v13), .watchOS(.v6)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "Put.io-Kit",
-            targets: ["Put.io-Kit"]),
+            name: "PutioKit",
+            targets: ["PutioKit"]),
     ],
     dependencies: [
     ],
@@ -18,10 +18,10 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "Put.io-Kit",
+            name: "PutioKit",
             dependencies: []),
         .testTarget(
-            name: "Put.io-KitTests",
-            dependencies: ["Put.io-Kit"]),
+            name: "PutioKitTests",
+            dependencies: ["PutioKit"]),
     ]
 )
