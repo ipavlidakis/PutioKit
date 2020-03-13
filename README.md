@@ -7,7 +7,7 @@ A simple wrapper around put.io api. PutioKit wraps all available endpoints and p
 ## SPM
 
 Add the following in the _dependencies_ array in Package.swift
-> .package(url: "https://github.com/ipavlidakis/PutioKit.git", from: "1.0.0"),
+> .package(url: "https://github.com/ipavlidakis/PutioKit.git", from: "1.0.0")
 
 # Architecture
 
