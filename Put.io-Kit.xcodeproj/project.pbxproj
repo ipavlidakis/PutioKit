@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"Put.io-Kit::Put.io-KitPackageTests::ProductTarget" /* Put.io-KitPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_255 /* Build configuration list for PBXAggregateTarget "Put.io-KitPackageTests" */;
+			buildConfigurationList = OBJ_164 /* Build configuration list for PBXAggregateTarget "Put.io-KitPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_258 /* PBXTargetDependency */,
+				OBJ_167 /* PBXTargetDependency */,
 			);
 			name = "Put.io-KitPackageTests";
 			productName = "Put.io-KitPackageTests";
@@ -21,154 +21,76 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_151 /* NetworkMe+FileRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* NetworkMe+FileRetriever.swift */; };
-		OBJ_152 /* NetworkeMeResponse+HeaderParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* NetworkeMeResponse+HeaderParser.swift */; };
-		OBJ_153 /* NetworkMe+HTTPResponseCodeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* NetworkMe+HTTPResponseCodeValidator.swift */; };
-		OBJ_154 /* NetworkMe+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* NetworkMe+Router.swift */; };
-		OBJ_155 /* NetworkMe+HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* NetworkMe+HTTPParameter.swift */; };
-		OBJ_156 /* NetworkMe+URLQueryItemEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* NetworkMe+URLQueryItemEncoder.swift */; };
-		OBJ_157 /* NetworMe+Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* NetworMe+Scheme.swift */; };
-		OBJ_158 /* NetworkMe+Accept.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* NetworkMe+Accept.swift */; };
-		OBJ_159 /* NetworkMe+ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* NetworkMe+ContentType.swift */; };
-		OBJ_160 /* NetworkMe+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* NetworkMe+Header.swift */; };
-		OBJ_161 /* NetworkMe+Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* NetworkMe+Method.swift */; };
-		OBJ_162 /* NetworkMe+TaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* NetworkMe+TaskType.swift */; };
-		OBJ_163 /* NetworkMeHeader+Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* NetworkMeHeader+Generic.swift */; };
-		OBJ_164 /* NetworkMeHeader+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* NetworkMeHeader+Request.swift */; };
-		OBJ_165 /* NetworkMeHeader+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* NetworkMeHeader+Response.swift */; };
-		OBJ_166 /* NetworkMeHeaderGeneric+Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* NetworkMeHeaderGeneric+Connection.swift */; };
-		OBJ_167 /* NetworkMeHeaderRequest+Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* NetworkMeHeaderRequest+Authorization.swift */; };
-		OBJ_168 /* NetworkMeHeaderRequest+CacheControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* NetworkMeHeaderRequest+CacheControl.swift */; };
-		OBJ_169 /* NetworkMeHeaderResponse+CacheControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* NetworkMeHeaderResponse+CacheControl.swift */; };
-		OBJ_170 /* NetworkMeResponse+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* NetworkMeResponse+Error.swift */; };
-		OBJ_171 /* NetworkMeRouter+NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* NetworkMeRouter+NetworkError.swift */; };
-		OBJ_172 /* DateFormatter+NetworkMeDateProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* DateFormatter+NetworkMeDateProviding.swift */; };
-		OBJ_173 /* JSONDecoder+NetworkMeDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* JSONDecoder+NetworkMeDecoding.swift */; };
-		OBJ_174 /* JSONEncoder+NetworkMeEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* JSONEncoder+NetworkMeEncoding.swift */; };
-		OBJ_175 /* URLSession+NetworkMeURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* URLSession+NetworkMeURLSessionProtocol.swift */; };
-		OBJ_176 /* NetworkMe+EmptyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* NetworkMe+EmptyDecodable.swift */; };
-		OBJ_177 /* NetworkMe+TransformableKeyValuePair.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* NetworkMe+TransformableKeyValuePair.swift */; };
-		OBJ_178 /* NetworMeResponseValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* NetworMeResponseValidatorProtocol.swift */; };
-		OBJ_179 /* NetworkMeDateProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* NetworkMeDateProviding.swift */; };
-		OBJ_180 /* NetworkMeDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* NetworkMeDecoding.swift */; };
-		OBJ_181 /* NetworkMeEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* NetworkMeEncoding.swift */; };
-		OBJ_182 /* NetworkMeEndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* NetworkMeEndpointProtocol.swift */; };
-		OBJ_183 /* NetworkMeFileRetrieving.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_132 /* NetworkMeFileRetrieving.swift */; };
-		OBJ_184 /* NetworkMeHeaderParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* NetworkMeHeaderParserProtocol.swift */; };
-		OBJ_185 /* NetworkMeHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_134 /* NetworkMeHeaderProtocol.swift */; };
-		OBJ_186 /* NetworkMeRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* NetworkMeRouting.swift */; };
-		OBJ_187 /* NetworkMeURLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* NetworkMeURLSessionProtocol.swift */; };
-		OBJ_188 /* NetworkMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* NetworkMe.swift */; };
-		OBJ_195 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* Package.swift */; };
-		OBJ_201 /* AccountEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* AccountEndpoint.swift */; };
-		OBJ_202 /* AuthenticationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* AuthenticationEndpoint.swift */; };
-		OBJ_203 /* AuthorizedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* AuthorizedEndpoint.swift */; };
-		OBJ_204 /* ConfigEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* ConfigEndpoint.swift */; };
-		OBJ_205 /* EventsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* EventsEndpoint.swift */; };
-		OBJ_206 /* FilesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* FilesEndpoint.swift */; };
-		OBJ_207 /* FriendsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* FriendsEndpoint.swift */; };
-		OBJ_208 /* RSSEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* RSSEndpoint.swift */; };
-		OBJ_209 /* SharesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SharesEndpoint.swift */; };
-		OBJ_210 /* TransfersEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* TransfersEndpoint.swift */; };
-		OBJ_211 /* ZipsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ZipsEndpoint.swift */; };
-		OBJ_212 /* Encodable+ConcreteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Encodable+ConcreteType.swift */; };
-		OBJ_213 /* AddTransferParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* AddTransferParametersModel.swift */; };
-		OBJ_214 /* CreateFolderParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* CreateFolderParametersModel.swift */; };
-		OBJ_215 /* DownloadHLSPlaylistParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* DownloadHLSPlaylistParametersModel.swift */; };
-		OBJ_216 /* DownloadSubtitleFileParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* DownloadSubtitleFileParametersModel.swift */; };
-		OBJ_217 /* ExtractArchiveParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* ExtractArchiveParametersModel.swift */; };
-		OBJ_218 /* FileListContinueParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* FileListContinueParametersModel.swift */; };
-		OBJ_219 /* FileListParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* FileListParametersModel.swift */; };
-		OBJ_220 /* FileSearchContinueParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* FileSearchContinueParametersModel.swift */; };
-		OBJ_221 /* FileSearchParametersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* FileSearchParametersModels.swift */; };
-		OBJ_222 /* MoveFilesParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* MoveFilesParametersModel.swift */; };
-		OBJ_223 /* RenameFileParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* RenameFileParametersModel.swift */; };
-		OBJ_224 /* SetVideoPositionParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* SetVideoPositionParametersModel.swift */; };
-		OBJ_225 /* ShareFilesWithAllFriendsParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ShareFilesWithAllFriendsParametersModel.swift */; };
-		OBJ_226 /* ShareFilesWithFriendsParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ShareFilesWithFriendsParametersModel.swift */; };
-		OBJ_227 /* UploadFileParametersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* UploadFileParametersModel.swift */; };
-		OBJ_228 /* AccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* AccessTokenModel.swift */; };
-		OBJ_229 /* AccountInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* AccountInfoModel.swift */; };
-		OBJ_230 /* AccountSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* AccountSettingsModel.swift */; };
-		OBJ_231 /* ApiClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ApiClientModel.swift */; };
-		OBJ_232 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ErrorModel.swift */; };
-		OBJ_233 /* ExtractionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* ExtractionModel.swift */; };
-		OBJ_234 /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* FileModel.swift */; };
-		OBJ_235 /* FileTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* FileTypeModel.swift */; };
-		OBJ_236 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* FriendModel.swift */; };
-		OBJ_237 /* RSSFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* RSSFeedModel.swift */; };
-		OBJ_238 /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* TransferModel.swift */; };
-		OBJ_239 /* PutioKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* PutioKit.swift */; };
-		OBJ_240 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* AuthenticationService.swift */; };
-		OBJ_241 /* PutioKit+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* PutioKit+Constants.swift */; };
-		OBJ_243 /* ReduxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReduxMe::ReduxMe::Product" /* ReduxMe.framework */; };
-		OBJ_244 /* NetworkMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NetworkMe::NetworkMe::Product" /* NetworkMe.framework */; };
-		OBJ_253 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_265 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* XCTestManifests.swift */; };
-		OBJ_267 /* Put_io_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Put.io-Kit::Put.io-Kit::Product" /* Put_io_Kit.framework */; };
-		OBJ_268 /* ReduxMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ReduxMe::ReduxMe::Product" /* ReduxMe.framework */; };
-		OBJ_269 /* NetworkMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "NetworkMe::NetworkMe::Product" /* NetworkMe.framework */; };
-		OBJ_277 /* ReduxMe+CompoundReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* ReduxMe+CompoundReducer.swift */; };
-		OBJ_278 /* ReduxMe+Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* ReduxMe+Dispatcher.swift */; };
-		OBJ_279 /* ReduxMe+DisposableBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* ReduxMe+DisposableBag.swift */; };
-		OBJ_280 /* ReduxMe+Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* ReduxMe+Observable.swift */; };
-		OBJ_281 /* ReduxMe+SerialDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* ReduxMe+SerialDispatchQueue.swift */; };
-		OBJ_282 /* ReduxMe+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* ReduxMe+Store.swift */; };
-		OBJ_283 /* ReduxMeActionDispatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* ReduxMeActionDispatching.swift */; };
-		OBJ_284 /* ReduxMeActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* ReduxMeActionProtocol.swift */; };
-		OBJ_285 /* ReduxMeDispatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* ReduxMeDispatching.swift */; };
-		OBJ_286 /* ReduxMeDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* ReduxMeDisposable.swift */; };
-		OBJ_287 /* ReduxMeDisposableBagProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* ReduxMeDisposableBagProtocol.swift */; };
-		OBJ_288 /* ReduxMeListenerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* ReduxMeListenerProtocol.swift */; };
-		OBJ_289 /* ReduxMeMiddlewareProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* ReduxMeMiddlewareProtocol.swift */; };
-		OBJ_290 /* ReduxMeObservableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* ReduxMeObservableProtocol.swift */; };
-		OBJ_291 /* ReduxMeReducerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* ReduxMeReducerProtocol.swift */; };
-		OBJ_292 /* ReduxMeSerialDispatchQueueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* ReduxMeSerialDispatchQueueing.swift */; };
-		OBJ_293 /* ReduxMeStateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* ReduxMeStateProtocol.swift */; };
-		OBJ_294 /* ReduxMeStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* ReduxMeStoreProtocol.swift */; };
-		OBJ_295 /* ReduxMeSubstateListenerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* ReduxMeSubstateListenerProtocol.swift */; };
-		OBJ_296 /* ReduxMeSubstateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* ReduxMeSubstateProtocol.swift */; };
-		OBJ_297 /* ReduxMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* ReduxMe.swift */; };
-		OBJ_304 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* Package.swift */; };
+		OBJ_111 /* Data+MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Data+MimeType.swift */; };
+		OBJ_112 /* Data+MultipartForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Data+MultipartForm.swift */; };
+		OBJ_113 /* Decodable+GenericInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Decodable+GenericInit.swift */; };
+		OBJ_114 /* JSONDecoder+PutioKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* JSONDecoder+PutioKit.swift */; };
+		OBJ_115 /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MimeType.swift */; };
+		OBJ_116 /* Swime.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Swime.swift */; };
+		OBJ_117 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* ErrorModel.swift */; };
+		OBJ_118 /* SuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* SuccessModel.swift */; };
+		OBJ_119 /* CredentialsStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* CredentialsStoring.swift */; };
+		OBJ_120 /* FileOrTransferProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* FileOrTransferProtocol.swift */; };
+		OBJ_121 /* URLQueryItemConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* URLQueryItemConvertible.swift */; };
+		OBJ_122 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* AccountService.swift */; };
+		OBJ_123 /* AccountService+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* AccountService+Model.swift */; };
+		OBJ_124 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* AuthenticationService.swift */; };
+		OBJ_125 /* AuthenticationService+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* AuthenticationService+Models.swift */; };
+		OBJ_126 /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* ConfigService.swift */; };
+		OBJ_127 /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* EventsService.swift */; };
+		OBJ_128 /* EventsService+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* EventsService+Models.swift */; };
+		OBJ_129 /* FilesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* FilesService.swift */; };
+		OBJ_130 /* FilesService+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* FilesService+Model.swift */; };
+		OBJ_131 /* FilesService+CRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* FilesService+CRUD.swift */; };
+		OBJ_132 /* FilesService+Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* FilesService+Listing.swift */; };
+		OBJ_133 /* FilesService+Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* FilesService+Searching.swift */; };
+		OBJ_134 /* FilesService+VideoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* FilesService+VideoOperations.swift */; };
+		OBJ_135 /* FriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* FriendsService.swift */; };
+		OBJ_136 /* FriendsService+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* FriendsService+Model.swift */; };
+		OBJ_137 /* RSSService+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* RSSService+Models.swift */; };
+		OBJ_138 /* RSSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* RSSService.swift */; };
+		OBJ_139 /* SharesService+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* SharesService+Model.swift */; };
+		OBJ_140 /* SharesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* SharesService.swift */; };
+		OBJ_141 /* TransfersService+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* TransfersService+Model.swift */; };
+		OBJ_142 /* TransfersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* TransfersService.swift */; };
+		OBJ_143 /* ZipService+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* ZipService+Models.swift */; };
+		OBJ_144 /* ZipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* ZipService.swift */; };
+		OBJ_145 /* ApiClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* ApiClientModel.swift */; };
+		OBJ_146 /* CompletionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* CompletionTypes.swift */; };
+		OBJ_147 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* Constants.swift */; };
+		OBJ_148 /* CreatedAndUpdatedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* CreatedAndUpdatedDateFormatter.swift */; };
+		OBJ_149 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* HTTPMethod.swift */; };
+		OBJ_150 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Helpers.swift */; };
+		OBJ_151 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* NetworkHandler.swift */; };
+		OBJ_152 /* PutIOKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* PutIOKitError.swift */; };
+		OBJ_153 /* URLRequest+HeaderPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* URLRequest+HeaderPair.swift */; };
+		OBJ_154 /* URLRequest+PutIOKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* URLRequest+PutIOKit.swift */; };
+		OBJ_155 /* URLRequest+QueryItemEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* URLRequest+QueryItemEncoder.swift */; };
+		OBJ_162 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_173 /* Mocks+NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* Mocks+NetworkRouter.swift */; };
+		OBJ_174 /* PutioKit+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* PutioKit+Mocks.swift */; };
+		OBJ_175 /* FilesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* FilesServiceTests.swift */; };
+		OBJ_176 /* PutioKit+Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* PutioKit+Stubs.swift */; };
+		OBJ_177 /* Stubs+ApiClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* Stubs+ApiClientModel.swift */; };
+		OBJ_178 /* Stubs+FileRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* Stubs+FileRetriever.swift */; };
+		OBJ_179 /* Stubs+OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* Stubs+OperationQueue.swift */; };
+		OBJ_180 /* Stubs+RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* Stubs+RequestModels.swift */; };
+		OBJ_181 /* Stubs+Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* Stubs+Responses.swift */; };
+		OBJ_182 /* Stubs+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* Stubs+Router.swift */; };
+		OBJ_183 /* Stubs+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* Stubs+URLSession.swift */; };
+		OBJ_184 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* XCTestManifests.swift */; };
+		OBJ_186 /* Put_io_Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Put.io-Kit::Put.io-Kit::Product" /* Put_io_Kit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		40A5290622E4C6910090C497 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "ReduxMe::ReduxMe";
-			remoteInfo = ReduxMe;
-		};
-		40A5290722E4C6910090C497 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "NetworkMe::NetworkMe";
-			remoteInfo = NetworkMe;
-		};
-		40A5290822E4C6920090C497 /* PBXContainerItemProxy */ = {
+		409320092419A726000013F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Put.io-Kit::Put.io-Kit";
 			remoteInfo = "Put.io-Kit";
 		};
-		40A5290922E4C6920090C497 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "ReduxMe::ReduxMe";
-			remoteInfo = ReduxMe;
-		};
-		40A5290A22E4C6920090C497 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "NetworkMe::NetworkMe";
-			remoteInfo = NetworkMe;
-		};
-		40A5290B22E4C6930090C497 /* PBXContainerItemProxy */ = {
+		4093200A2419A727000013F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -178,280 +100,239 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"NetworkMe::NetworkMe::Product" /* NetworkMe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NetworkMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* AccountEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_100 /* NetworkMe+HTTPParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+HTTPParameter.swift"; sourceTree = "<group>"; };
-		OBJ_101 /* NetworkMe+URLQueryItemEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+URLQueryItemEncoder.swift"; sourceTree = "<group>"; };
-		OBJ_103 /* NetworMe+Scheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworMe+Scheme.swift"; sourceTree = "<group>"; };
-		OBJ_104 /* NetworkMe+Accept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+Accept.swift"; sourceTree = "<group>"; };
-		OBJ_105 /* NetworkMe+ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+ContentType.swift"; sourceTree = "<group>"; };
-		OBJ_106 /* NetworkMe+Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+Header.swift"; sourceTree = "<group>"; };
-		OBJ_107 /* NetworkMe+Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+Method.swift"; sourceTree = "<group>"; };
-		OBJ_108 /* NetworkMe+TaskType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+TaskType.swift"; sourceTree = "<group>"; };
-		OBJ_109 /* NetworkMeHeader+Generic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMeHeader+Generic.swift"; sourceTree = "<group>"; };
-		OBJ_11 /* AuthenticationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_110 /* NetworkMeHeader+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMeHeader+Request.swift"; sourceTree = "<group>"; };
-		OBJ_111 /* NetworkMeHeader+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMeHeader+Response.swift"; sourceTree = "<group>"; };
-		OBJ_112 /* NetworkMeHeaderGeneric+Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMeHeaderGeneric+Connection.swift"; sourceTree = "<group>"; };
-		OBJ_113 /* NetworkMeHeaderRequest+Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMeHeaderRequest+Authorization.swift"; sourceTree = "<group>"; };
-		OBJ_114 /* NetworkMeHeaderRequest+CacheControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMeHeaderRequest+CacheControl.swift"; sourceTree = "<group>"; };
-		OBJ_115 /* NetworkMeHeaderResponse+CacheControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMeHeaderResponse+CacheControl.swift"; sourceTree = "<group>"; };
-		OBJ_116 /* NetworkMeResponse+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMeResponse+Error.swift"; sourceTree = "<group>"; };
-		OBJ_117 /* NetworkMeRouter+NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMeRouter+NetworkError.swift"; sourceTree = "<group>"; };
-		OBJ_119 /* DateFormatter+NetworkMeDateProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+NetworkMeDateProviding.swift"; sourceTree = "<group>"; };
-		OBJ_12 /* AuthorizedEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_120 /* JSONDecoder+NetworkMeDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+NetworkMeDecoding.swift"; sourceTree = "<group>"; };
-		OBJ_121 /* JSONEncoder+NetworkMeEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+NetworkMeEncoding.swift"; sourceTree = "<group>"; };
-		OBJ_122 /* URLSession+NetworkMeURLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+NetworkMeURLSessionProtocol.swift"; sourceTree = "<group>"; };
-		OBJ_124 /* NetworkMe+EmptyDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+EmptyDecodable.swift"; sourceTree = "<group>"; };
-		OBJ_125 /* NetworkMe+TransformableKeyValuePair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+TransformableKeyValuePair.swift"; sourceTree = "<group>"; };
-		OBJ_127 /* NetworMeResponseValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworMeResponseValidatorProtocol.swift; sourceTree = "<group>"; };
-		OBJ_128 /* NetworkMeDateProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeDateProviding.swift; sourceTree = "<group>"; };
-		OBJ_129 /* NetworkMeDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeDecoding.swift; sourceTree = "<group>"; };
-		OBJ_13 /* ConfigEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_130 /* NetworkMeEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeEncoding.swift; sourceTree = "<group>"; };
-		OBJ_131 /* NetworkMeEndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeEndpointProtocol.swift; sourceTree = "<group>"; };
-		OBJ_132 /* NetworkMeFileRetrieving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeFileRetrieving.swift; sourceTree = "<group>"; };
-		OBJ_133 /* NetworkMeHeaderParserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeHeaderParserProtocol.swift; sourceTree = "<group>"; };
-		OBJ_134 /* NetworkMeHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeHeaderProtocol.swift; sourceTree = "<group>"; };
-		OBJ_135 /* NetworkMeRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeRouting.swift; sourceTree = "<group>"; };
-		OBJ_136 /* NetworkMeURLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMeURLSessionProtocol.swift; sourceTree = "<group>"; };
-		OBJ_137 /* NetworkMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMe.swift; sourceTree = "<group>"; };
-		OBJ_138 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ipavlidakis/Projects/Put.io-Kit/.build/checkouts/NetworkMe/Package.swift"; sourceTree = "<group>"; };
-		OBJ_14 /* EventsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_144 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		OBJ_145 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_15 /* FilesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_16 /* FriendsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_17 /* RSSEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_18 /* SharesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_19 /* TransfersEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_20 /* ZipsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipsEndpoint.swift; sourceTree = "<group>"; };
-		OBJ_22 /* Encodable+ConcreteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+ConcreteType.swift"; sourceTree = "<group>"; };
-		OBJ_25 /* AddTransferParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransferParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_26 /* CreateFolderParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFolderParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_27 /* DownloadHLSPlaylistParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadHLSPlaylistParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_28 /* DownloadSubtitleFileParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadSubtitleFileParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_29 /* ExtractArchiveParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractArchiveParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_30 /* FileListContinueParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListContinueParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_31 /* FileListParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_32 /* FileSearchContinueParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearchContinueParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_33 /* FileSearchParametersModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSearchParametersModels.swift; sourceTree = "<group>"; };
-		OBJ_34 /* MoveFilesParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveFilesParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_35 /* RenameFileParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameFileParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_36 /* SetVideoPositionParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVideoPositionParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_37 /* ShareFilesWithAllFriendsParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFilesWithAllFriendsParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_38 /* ShareFilesWithFriendsParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFilesWithFriendsParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_39 /* UploadFileParametersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileParametersModel.swift; sourceTree = "<group>"; };
-		OBJ_41 /* AccessTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenModel.swift; sourceTree = "<group>"; };
-		OBJ_42 /* AccountInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoModel.swift; sourceTree = "<group>"; };
-		OBJ_43 /* AccountSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsModel.swift; sourceTree = "<group>"; };
-		OBJ_44 /* ApiClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientModel.swift; sourceTree = "<group>"; };
-		OBJ_45 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
-		OBJ_46 /* ExtractionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractionModel.swift; sourceTree = "<group>"; };
-		OBJ_47 /* FileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
-		OBJ_48 /* FileTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTypeModel.swift; sourceTree = "<group>"; };
-		OBJ_49 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
-		OBJ_50 /* RSSFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeedModel.swift; sourceTree = "<group>"; };
-		OBJ_51 /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
-		OBJ_52 /* PutioKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutioKit.swift; sourceTree = "<group>"; };
-		OBJ_54 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
-		OBJ_56 /* PutioKit+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PutioKit+Constants.swift"; sourceTree = "<group>"; };
+		OBJ_10 /* Data+MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MimeType.swift"; sourceTree = "<group>"; };
+		OBJ_102 /* Put.io-Kit Reference App */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Put.io-Kit Reference App"; sourceTree = SOURCE_ROOT; };
+		OBJ_103 /* __DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __DerivedData; sourceTree = SOURCE_ROOT; };
+		OBJ_104 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_105 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_11 /* Data+MultipartForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+MultipartForm.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* Decodable+GenericInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+GenericInit.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* JSONDecoder+PutioKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+PutioKit.swift"; sourceTree = "<group>"; };
+		OBJ_16 /* MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Swime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swime.swift; sourceTree = "<group>"; };
+		OBJ_19 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		OBJ_20 /* SuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessModel.swift; sourceTree = "<group>"; };
+		OBJ_22 /* CredentialsStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsStoring.swift; sourceTree = "<group>"; };
+		OBJ_23 /* FileOrTransferProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOrTransferProtocol.swift; sourceTree = "<group>"; };
+		OBJ_24 /* URLQueryItemConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryItemConvertible.swift; sourceTree = "<group>"; };
+		OBJ_27 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		OBJ_29 /* AccountService+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountService+Model.swift"; sourceTree = "<group>"; };
+		OBJ_31 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		OBJ_33 /* AuthenticationService+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthenticationService+Models.swift"; sourceTree = "<group>"; };
+		OBJ_35 /* ConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigService.swift; sourceTree = "<group>"; };
+		OBJ_37 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
+		OBJ_39 /* EventsService+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventsService+Models.swift"; sourceTree = "<group>"; };
+		OBJ_41 /* FilesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesService.swift; sourceTree = "<group>"; };
+		OBJ_43 /* FilesService+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilesService+Model.swift"; sourceTree = "<group>"; };
+		OBJ_45 /* FilesService+CRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilesService+CRUD.swift"; sourceTree = "<group>"; };
+		OBJ_46 /* FilesService+Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilesService+Listing.swift"; sourceTree = "<group>"; };
+		OBJ_47 /* FilesService+Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilesService+Searching.swift"; sourceTree = "<group>"; };
+		OBJ_48 /* FilesService+VideoOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilesService+VideoOperations.swift"; sourceTree = "<group>"; };
+		OBJ_50 /* FriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsService.swift; sourceTree = "<group>"; };
+		OBJ_52 /* FriendsService+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendsService+Model.swift"; sourceTree = "<group>"; };
+		OBJ_55 /* RSSService+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RSSService+Models.swift"; sourceTree = "<group>"; };
+		OBJ_56 /* RSSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSService.swift; sourceTree = "<group>"; };
+		OBJ_59 /* SharesService+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharesService+Model.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_65 /* ReduxMe+CompoundReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReduxMe+CompoundReducer.swift"; sourceTree = "<group>"; };
-		OBJ_66 /* ReduxMe+Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReduxMe+Dispatcher.swift"; sourceTree = "<group>"; };
-		OBJ_67 /* ReduxMe+DisposableBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReduxMe+DisposableBag.swift"; sourceTree = "<group>"; };
-		OBJ_68 /* ReduxMe+Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReduxMe+Observable.swift"; sourceTree = "<group>"; };
-		OBJ_69 /* ReduxMe+SerialDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReduxMe+SerialDispatchQueue.swift"; sourceTree = "<group>"; };
-		OBJ_70 /* ReduxMe+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReduxMe+Store.swift"; sourceTree = "<group>"; };
-		OBJ_72 /* ReduxMeActionDispatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeActionDispatching.swift; sourceTree = "<group>"; };
-		OBJ_73 /* ReduxMeActionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeActionProtocol.swift; sourceTree = "<group>"; };
-		OBJ_74 /* ReduxMeDispatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeDispatching.swift; sourceTree = "<group>"; };
-		OBJ_75 /* ReduxMeDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeDisposable.swift; sourceTree = "<group>"; };
-		OBJ_76 /* ReduxMeDisposableBagProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeDisposableBagProtocol.swift; sourceTree = "<group>"; };
-		OBJ_77 /* ReduxMeListenerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeListenerProtocol.swift; sourceTree = "<group>"; };
-		OBJ_78 /* ReduxMeMiddlewareProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeMiddlewareProtocol.swift; sourceTree = "<group>"; };
-		OBJ_79 /* ReduxMeObservableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeObservableProtocol.swift; sourceTree = "<group>"; };
-		OBJ_80 /* ReduxMeReducerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeReducerProtocol.swift; sourceTree = "<group>"; };
-		OBJ_81 /* ReduxMeSerialDispatchQueueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeSerialDispatchQueueing.swift; sourceTree = "<group>"; };
-		OBJ_82 /* ReduxMeStateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeStateProtocol.swift; sourceTree = "<group>"; };
-		OBJ_83 /* ReduxMeStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeStoreProtocol.swift; sourceTree = "<group>"; };
-		OBJ_84 /* ReduxMeSubstateListenerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeSubstateListenerProtocol.swift; sourceTree = "<group>"; };
-		OBJ_85 /* ReduxMeSubstateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMeSubstateProtocol.swift; sourceTree = "<group>"; };
-		OBJ_86 /* ReduxMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxMe.swift; sourceTree = "<group>"; };
-		OBJ_87 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ipavlidakis/Projects/Put.io-Kit/.build/checkouts/ReduxMe/Package.swift"; sourceTree = "<group>"; };
-		OBJ_93 /* NetworkMe+FileRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+FileRetriever.swift"; sourceTree = "<group>"; };
-		OBJ_94 /* NetworkeMeResponse+HeaderParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkeMeResponse+HeaderParser.swift"; sourceTree = "<group>"; };
-		OBJ_96 /* NetworkMe+HTTPResponseCodeValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+HTTPResponseCodeValidator.swift"; sourceTree = "<group>"; };
-		OBJ_98 /* NetworkMe+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkMe+Router.swift"; sourceTree = "<group>"; };
-		"Put.io-Kit::Put.io-Kit::Product" /* Put_io_Kit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Put_io_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_60 /* SharesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharesService.swift; sourceTree = "<group>"; };
+		OBJ_63 /* TransfersService+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransfersService+Model.swift"; sourceTree = "<group>"; };
+		OBJ_64 /* TransfersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransfersService.swift; sourceTree = "<group>"; };
+		OBJ_67 /* ZipService+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ZipService+Models.swift"; sourceTree = "<group>"; };
+		OBJ_68 /* ZipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipService.swift; sourceTree = "<group>"; };
+		OBJ_70 /* ApiClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientModel.swift; sourceTree = "<group>"; };
+		OBJ_71 /* CompletionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionTypes.swift; sourceTree = "<group>"; };
+		OBJ_72 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		OBJ_73 /* CreatedAndUpdatedDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatedAndUpdatedDateFormatter.swift; sourceTree = "<group>"; };
+		OBJ_74 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		OBJ_75 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		OBJ_76 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		OBJ_77 /* PutIOKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutIOKitError.swift; sourceTree = "<group>"; };
+		OBJ_79 /* URLRequest+HeaderPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+HeaderPair.swift"; sourceTree = "<group>"; };
+		OBJ_80 /* URLRequest+PutIOKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+PutIOKit.swift"; sourceTree = "<group>"; };
+		OBJ_81 /* URLRequest+QueryItemEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+QueryItemEncoder.swift"; sourceTree = "<group>"; };
+		OBJ_85 /* Mocks+NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mocks+NetworkRouter.swift"; sourceTree = "<group>"; };
+		OBJ_86 /* PutioKit+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PutioKit+Mocks.swift"; sourceTree = "<group>"; };
+		OBJ_88 /* FilesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesServiceTests.swift; sourceTree = "<group>"; };
+		OBJ_90 /* PutioKit+Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PutioKit+Stubs.swift"; sourceTree = "<group>"; };
+		OBJ_91 /* Stubs+ApiClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stubs+ApiClientModel.swift"; sourceTree = "<group>"; };
+		OBJ_92 /* Stubs+FileRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stubs+FileRetriever.swift"; sourceTree = "<group>"; };
+		OBJ_93 /* Stubs+OperationQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stubs+OperationQueue.swift"; sourceTree = "<group>"; };
+		OBJ_94 /* Stubs+RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stubs+RequestModels.swift"; sourceTree = "<group>"; };
+		OBJ_95 /* Stubs+Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stubs+Responses.swift"; sourceTree = "<group>"; };
+		OBJ_96 /* Stubs+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stubs+Router.swift"; sourceTree = "<group>"; };
+		OBJ_97 /* Stubs+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stubs+URLSession.swift"; sourceTree = "<group>"; };
+		OBJ_98 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		"Put.io-Kit::Put.io-Kit::Product" /* Put_io_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Put_io_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Put.io-Kit::Put.io-KitTests::Product" /* Put_io_KitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = Put_io_KitTests.xctest; path = "Put.io-KitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		"ReduxMe::ReduxMe::Product" /* ReduxMe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReduxMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_189 /* Frameworks */ = {
+		OBJ_156 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_242 /* Frameworks */ = {
+		OBJ_185 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_243 /* ReduxMe.framework in Frameworks */,
-				OBJ_244 /* NetworkMe.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_266 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_267 /* Put_io_Kit.framework in Frameworks */,
-				OBJ_268 /* ReduxMe.framework in Frameworks */,
-				OBJ_269 /* NetworkMe.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_298 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
+				OBJ_186 /* Put_io_Kit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_102 /* Enums */ = {
+		OBJ_14 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_103 /* NetworMe+Scheme.swift */,
-				OBJ_104 /* NetworkMe+Accept.swift */,
-				OBJ_105 /* NetworkMe+ContentType.swift */,
-				OBJ_106 /* NetworkMe+Header.swift */,
-				OBJ_107 /* NetworkMe+Method.swift */,
-				OBJ_108 /* NetworkMe+TaskType.swift */,
-				OBJ_109 /* NetworkMeHeader+Generic.swift */,
-				OBJ_110 /* NetworkMeHeader+Request.swift */,
-				OBJ_111 /* NetworkMeHeader+Response.swift */,
-				OBJ_112 /* NetworkMeHeaderGeneric+Connection.swift */,
-				OBJ_113 /* NetworkMeHeaderRequest+Authorization.swift */,
-				OBJ_114 /* NetworkMeHeaderRequest+CacheControl.swift */,
-				OBJ_115 /* NetworkMeHeaderResponse+CacheControl.swift */,
-				OBJ_116 /* NetworkMeResponse+Error.swift */,
-				OBJ_117 /* NetworkMeRouter+NetworkError.swift */,
+				OBJ_15 /* Swime */,
 			);
-			path = Enums;
+			path = External;
 			sourceTree = "<group>";
 		};
-		OBJ_118 /* Extensions */ = {
+		OBJ_15 /* Swime */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_119 /* DateFormatter+NetworkMeDateProviding.swift */,
-				OBJ_120 /* JSONDecoder+NetworkMeDecoding.swift */,
-				OBJ_121 /* JSONEncoder+NetworkMeEncoding.swift */,
-				OBJ_122 /* URLSession+NetworkMeURLSessionProtocol.swift */,
+				OBJ_16 /* MimeType.swift */,
+				OBJ_17 /* Swime.swift */,
 			);
-			path = Extensions;
+			path = Swime;
 			sourceTree = "<group>";
 		};
-		OBJ_123 /* Models */ = {
+		OBJ_18 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_124 /* NetworkMe+EmptyDecodable.swift */,
-				OBJ_125 /* NetworkMe+TransformableKeyValuePair.swift */,
+				OBJ_19 /* ErrorModel.swift */,
+				OBJ_20 /* SuccessModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		OBJ_126 /* Protocols */ = {
+		OBJ_21 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_127 /* NetworMeResponseValidatorProtocol.swift */,
-				OBJ_128 /* NetworkMeDateProviding.swift */,
-				OBJ_129 /* NetworkMeDecoding.swift */,
-				OBJ_130 /* NetworkMeEncoding.swift */,
-				OBJ_131 /* NetworkMeEndpointProtocol.swift */,
-				OBJ_132 /* NetworkMeFileRetrieving.swift */,
-				OBJ_133 /* NetworkMeHeaderParserProtocol.swift */,
-				OBJ_134 /* NetworkMeHeaderProtocol.swift */,
-				OBJ_135 /* NetworkMeRouting.swift */,
-				OBJ_136 /* NetworkMeURLSessionProtocol.swift */,
+				OBJ_22 /* CredentialsStoring.swift */,
+				OBJ_23 /* FileOrTransferProtocol.swift */,
+				OBJ_24 /* URLQueryItemConvertible.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		OBJ_139 /* Products */ = {
+		OBJ_25 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				"NetworkMe::NetworkMe::Product" /* NetworkMe.framework */,
-				"Put.io-Kit::Put.io-KitTests::Product" /* Put_io_KitTests.xctest */,
-				"Put.io-Kit::Put.io-Kit::Product" /* Put_io_Kit.framework */,
-				"ReduxMe::ReduxMe::Product" /* ReduxMe.framework */,
+				OBJ_26 /* Account */,
+				OBJ_30 /* Authentication */,
+				OBJ_34 /* Config */,
+				OBJ_36 /* EventsService */,
+				OBJ_40 /* Files */,
+				OBJ_49 /* FriendsService */,
+				OBJ_53 /* RSSService */,
+				OBJ_57 /* SharesService */,
+				OBJ_61 /* Transfers */,
+				OBJ_65 /* Zip */,
 			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_21 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_22 /* Encodable+ConcreteType.swift */,
-			);
-			path = Extensions;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		OBJ_23 /* Models */ = {
+		OBJ_26 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_24 /* Parameters */,
-				OBJ_40 /* Schemas */,
+				OBJ_27 /* AccountService.swift */,
+				OBJ_28 /* Models */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		OBJ_28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_29 /* AccountService+Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		OBJ_24 /* Parameters */ = {
+		OBJ_30 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_25 /* AddTransferParametersModel.swift */,
-				OBJ_26 /* CreateFolderParametersModel.swift */,
-				OBJ_27 /* DownloadHLSPlaylistParametersModel.swift */,
-				OBJ_28 /* DownloadSubtitleFileParametersModel.swift */,
-				OBJ_29 /* ExtractArchiveParametersModel.swift */,
-				OBJ_30 /* FileListContinueParametersModel.swift */,
-				OBJ_31 /* FileListParametersModel.swift */,
-				OBJ_32 /* FileSearchContinueParametersModel.swift */,
-				OBJ_33 /* FileSearchParametersModels.swift */,
-				OBJ_34 /* MoveFilesParametersModel.swift */,
-				OBJ_35 /* RenameFileParametersModel.swift */,
-				OBJ_36 /* SetVideoPositionParametersModel.swift */,
-				OBJ_37 /* ShareFilesWithAllFriendsParametersModel.swift */,
-				OBJ_38 /* ShareFilesWithFriendsParametersModel.swift */,
-				OBJ_39 /* UploadFileParametersModel.swift */,
+				OBJ_31 /* AuthenticationService.swift */,
+				OBJ_32 /* Models */,
 			);
-			path = Parameters;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
-		OBJ_40 /* Schemas */ = {
+		OBJ_32 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_41 /* AccessTokenModel.swift */,
-				OBJ_42 /* AccountInfoModel.swift */,
-				OBJ_43 /* AccountSettingsModel.swift */,
-				OBJ_44 /* ApiClientModel.swift */,
-				OBJ_45 /* ErrorModel.swift */,
-				OBJ_46 /* ExtractionModel.swift */,
-				OBJ_47 /* FileModel.swift */,
-				OBJ_48 /* FileTypeModel.swift */,
-				OBJ_49 /* FriendModel.swift */,
-				OBJ_50 /* RSSFeedModel.swift */,
-				OBJ_51 /* TransferModel.swift */,
+				OBJ_33 /* AuthenticationService+Models.swift */,
 			);
-			path = Schemas;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* ConfigService.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		OBJ_36 /* EventsService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* EventsService.swift */,
+				OBJ_38 /* Models */,
+			);
+			path = EventsService;
+			sourceTree = "<group>";
+		};
+		OBJ_38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* EventsService+Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_40 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* FilesService.swift */,
+				OBJ_42 /* Models */,
+				OBJ_44 /* Subservices */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		OBJ_42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* FilesService+Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_44 /* Subservices */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_45 /* FilesService+CRUD.swift */,
+				OBJ_46 /* FilesService+Listing.swift */,
+				OBJ_47 /* FilesService+Searching.swift */,
+				OBJ_48 /* FilesService+VideoOperations.swift */,
+			);
+			path = Subservices;
+			sourceTree = "<group>";
+		};
+		OBJ_49 /* FriendsService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_50 /* FriendsService.swift */,
+				OBJ_51 /* Models */,
+			);
+			path = FriendsService;
 			sourceTree = "<group>";
 		};
 		OBJ_5 /*  */ = {
@@ -459,88 +340,106 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_57 /* Tests */,
-				OBJ_61 /* Dependencies */,
-				OBJ_139 /* Products */,
-				OBJ_144 /* LICENSE */,
-				OBJ_145 /* README.md */,
+				OBJ_82 /* Tests */,
+				OBJ_99 /* Products */,
+				OBJ_102 /* Put.io-Kit Reference App */,
+				OBJ_103 /* __DerivedData */,
+				OBJ_104 /* LICENSE */,
+				OBJ_105 /* README.md */,
 			);
 			name = "";
 			sourceTree = "<group>";
 		};
-		OBJ_53 /* Services */ = {
+		OBJ_51 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_54 /* AuthenticationService.swift */,
+				OBJ_52 /* FriendsService+Model.swift */,
 			);
-			path = Services;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		OBJ_55 /* Utility */ = {
+		OBJ_53 /* RSSService */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_56 /* PutioKit+Constants.swift */,
+				OBJ_54 /* Models */,
+				OBJ_56 /* RSSService.swift */,
 			);
-			path = Utility;
+			path = RSSService;
 			sourceTree = "<group>";
 		};
-		OBJ_57 /* Tests */ = {
+		OBJ_54 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_58 /* Put.io-KitTests */,
+				OBJ_55 /* RSSService+Models.swift */,
 			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_58 /* Put.io-KitTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_60 /* XCTestManifests.swift */,
-			);
-			name = "Put.io-KitTests";
-			path = "Tests/Put.io-KitTests";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_61 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_62 /* ReduxMe */,
-				OBJ_88 /* NetworkMe */,
-			);
-			name = Dependencies;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		OBJ_62 /* ReduxMe */ = {
+		OBJ_57 /* SharesService */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_63 /* ReduxMe */,
-				OBJ_87 /* Package.swift */,
+				OBJ_58 /* Models */,
+				OBJ_60 /* SharesService.swift */,
 			);
-			name = ReduxMe;
-			sourceTree = SOURCE_ROOT;
+			path = SharesService;
+			sourceTree = "<group>";
 		};
-		OBJ_63 /* ReduxMe */ = {
+		OBJ_58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_64 /* Implementation */,
-				OBJ_71 /* Protocols */,
-				OBJ_86 /* ReduxMe.swift */,
+				OBJ_59 /* SharesService+Model.swift */,
 			);
-			name = ReduxMe;
-			path = .build/checkouts/ReduxMe/Sources/ReduxMe;
-			sourceTree = SOURCE_ROOT;
+			path = Models;
+			sourceTree = "<group>";
 		};
-		OBJ_64 /* Implementation */ = {
+		OBJ_61 /* Transfers */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_65 /* ReduxMe+CompoundReducer.swift */,
-				OBJ_66 /* ReduxMe+Dispatcher.swift */,
-				OBJ_67 /* ReduxMe+DisposableBag.swift */,
-				OBJ_68 /* ReduxMe+Observable.swift */,
-				OBJ_69 /* ReduxMe+SerialDispatchQueue.swift */,
-				OBJ_70 /* ReduxMe+Store.swift */,
+				OBJ_62 /* Models */,
+				OBJ_64 /* TransfersService.swift */,
 			);
-			path = Implementation;
+			path = Transfers;
+			sourceTree = "<group>";
+		};
+		OBJ_62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_63 /* TransfersService+Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_65 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_66 /* Models */,
+				OBJ_68 /* ZipService.swift */,
+			);
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		OBJ_66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_67 /* ZipService+Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_69 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_70 /* ApiClientModel.swift */,
+				OBJ_71 /* CompletionTypes.swift */,
+				OBJ_72 /* Constants.swift */,
+				OBJ_73 /* CreatedAndUpdatedDateFormatter.swift */,
+				OBJ_74 /* HTTPMethod.swift */,
+				OBJ_75 /* Helpers.swift */,
+				OBJ_76 /* NetworkHandler.swift */,
+				OBJ_77 /* PutIOKitError.swift */,
+				OBJ_78 /* URLRequest */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -551,180 +450,115 @@
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_71 /* Protocols */ = {
+		OBJ_78 /* URLRequest */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_72 /* ReduxMeActionDispatching.swift */,
-				OBJ_73 /* ReduxMeActionProtocol.swift */,
-				OBJ_74 /* ReduxMeDispatching.swift */,
-				OBJ_75 /* ReduxMeDisposable.swift */,
-				OBJ_76 /* ReduxMeDisposableBagProtocol.swift */,
-				OBJ_77 /* ReduxMeListenerProtocol.swift */,
-				OBJ_78 /* ReduxMeMiddlewareProtocol.swift */,
-				OBJ_79 /* ReduxMeObservableProtocol.swift */,
-				OBJ_80 /* ReduxMeReducerProtocol.swift */,
-				OBJ_81 /* ReduxMeSerialDispatchQueueing.swift */,
-				OBJ_82 /* ReduxMeStateProtocol.swift */,
-				OBJ_83 /* ReduxMeStoreProtocol.swift */,
-				OBJ_84 /* ReduxMeSubstateListenerProtocol.swift */,
-				OBJ_85 /* ReduxMeSubstateProtocol.swift */,
+				OBJ_79 /* URLRequest+HeaderPair.swift */,
+				OBJ_80 /* URLRequest+PutIOKit.swift */,
+				OBJ_81 /* URLRequest+QueryItemEncoder.swift */,
 			);
-			path = Protocols;
+			path = URLRequest;
 			sourceTree = "<group>";
 		};
 		OBJ_8 /* Put.io-Kit */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* Endpoints */,
-				OBJ_21 /* Extensions */,
-				OBJ_23 /* Models */,
-				OBJ_53 /* Services */,
-				OBJ_55 /* Utility */,
-				OBJ_52 /* PutioKit.swift */,
+				OBJ_9 /* Extensions */,
+				OBJ_14 /* External */,
+				OBJ_18 /* Models */,
+				OBJ_21 /* Protocols */,
+				OBJ_25 /* Services */,
+				OBJ_69 /* Utilities */,
 			);
 			name = "Put.io-Kit";
 			path = "Sources/Put.io-Kit";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_88 /* NetworkMe */ = {
+		OBJ_82 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_89 /* NetworkMe */,
-				OBJ_138 /* Package.swift */,
+				OBJ_83 /* Put.io-KitTests */,
 			);
-			name = NetworkMe;
+			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_89 /* NetworkMe */ = {
+		OBJ_83 /* Put.io-KitTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_90 /* Implementation */,
-				OBJ_137 /* NetworkMe.swift */,
+				OBJ_84 /* Mocks */,
+				OBJ_87 /* Services */,
+				OBJ_89 /* Stubs */,
+				OBJ_98 /* XCTestManifests.swift */,
 			);
-			name = NetworkMe;
-			path = .build/checkouts/NetworkMe/Sources/NetworkMe;
+			name = "Put.io-KitTests";
+			path = "Tests/Put.io-KitTests";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_9 /* Endpoints */ = {
+		OBJ_84 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* AccountEndpoint.swift */,
-				OBJ_11 /* AuthenticationEndpoint.swift */,
-				OBJ_12 /* AuthorizedEndpoint.swift */,
-				OBJ_13 /* ConfigEndpoint.swift */,
-				OBJ_14 /* EventsEndpoint.swift */,
-				OBJ_15 /* FilesEndpoint.swift */,
-				OBJ_16 /* FriendsEndpoint.swift */,
-				OBJ_17 /* RSSEndpoint.swift */,
-				OBJ_18 /* SharesEndpoint.swift */,
-				OBJ_19 /* TransfersEndpoint.swift */,
-				OBJ_20 /* ZipsEndpoint.swift */,
+				OBJ_85 /* Mocks+NetworkRouter.swift */,
+				OBJ_86 /* PutioKit+Mocks.swift */,
 			);
-			path = Endpoints;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
-		OBJ_90 /* Implementation */ = {
+		OBJ_87 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_91 /* Components */,
-				OBJ_102 /* Enums */,
-				OBJ_118 /* Extensions */,
-				OBJ_123 /* Models */,
-				OBJ_126 /* Protocols */,
+				OBJ_88 /* FilesServiceTests.swift */,
 			);
-			path = Implementation;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		OBJ_91 /* Components */ = {
+		OBJ_89 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_92 /* FileRetriever */,
-				OBJ_94 /* NetworkeMeResponse+HeaderParser.swift */,
-				OBJ_95 /* ResponseValidator */,
-				OBJ_97 /* Router */,
-				OBJ_99 /* URLQueryItemEncoder */,
+				OBJ_90 /* PutioKit+Stubs.swift */,
+				OBJ_91 /* Stubs+ApiClientModel.swift */,
+				OBJ_92 /* Stubs+FileRetriever.swift */,
+				OBJ_93 /* Stubs+OperationQueue.swift */,
+				OBJ_94 /* Stubs+RequestModels.swift */,
+				OBJ_95 /* Stubs+Responses.swift */,
+				OBJ_96 /* Stubs+Router.swift */,
+				OBJ_97 /* Stubs+URLSession.swift */,
 			);
-			path = Components;
+			path = Stubs;
 			sourceTree = "<group>";
 		};
-		OBJ_92 /* FileRetriever */ = {
+		OBJ_9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_93 /* NetworkMe+FileRetriever.swift */,
+				OBJ_10 /* Data+MimeType.swift */,
+				OBJ_11 /* Data+MultipartForm.swift */,
+				OBJ_12 /* Decodable+GenericInit.swift */,
+				OBJ_13 /* JSONDecoder+PutioKit.swift */,
 			);
-			path = FileRetriever;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		OBJ_95 /* ResponseValidator */ = {
+		OBJ_99 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_96 /* NetworkMe+HTTPResponseCodeValidator.swift */,
+				"Put.io-Kit::Put.io-Kit::Product" /* Put_io_Kit.framework */,
+				"Put.io-Kit::Put.io-KitTests::Product" /* Put_io_KitTests.xctest */,
 			);
-			path = ResponseValidator;
-			sourceTree = "<group>";
-		};
-		OBJ_97 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_98 /* NetworkMe+Router.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		OBJ_99 /* URLQueryItemEncoder */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_100 /* NetworkMe+HTTPParameter.swift */,
-				OBJ_101 /* NetworkMe+URLQueryItemEncoder.swift */,
-			);
-			path = URLQueryItemEncoder;
-			sourceTree = "<group>";
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"NetworkMe::NetworkMe" /* NetworkMe */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_147 /* Build configuration list for PBXNativeTarget "NetworkMe" */;
-			buildPhases = (
-				OBJ_150 /* Sources */,
-				OBJ_189 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NetworkMe;
-			productName = NetworkMe;
-			productReference = "NetworkMe::NetworkMe::Product" /* NetworkMe.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"NetworkMe::SwiftPMPackageDescription" /* NetworkMePackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_191 /* Build configuration list for PBXNativeTarget "NetworkMePackageDescription" */;
-			buildPhases = (
-				OBJ_194 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NetworkMePackageDescription;
-			productName = NetworkMePackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
 		"Put.io-Kit::Put.io-Kit" /* Put.io-Kit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_197 /* Build configuration list for PBXNativeTarget "Put.io-Kit" */;
+			buildConfigurationList = OBJ_107 /* Build configuration list for PBXNativeTarget "Put.io-Kit" */;
 			buildPhases = (
-				OBJ_200 /* Sources */,
-				OBJ_242 /* Frameworks */,
+				OBJ_110 /* Sources */,
+				OBJ_156 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_245 /* PBXTargetDependency */,
-				OBJ_247 /* PBXTargetDependency */,
 			);
 			name = "Put.io-Kit";
 			productName = Put_io_Kit;
@@ -733,17 +567,15 @@
 		};
 		"Put.io-Kit::Put.io-KitTests" /* Put.io-KitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_260 /* Build configuration list for PBXNativeTarget "Put.io-KitTests" */;
+			buildConfigurationList = OBJ_169 /* Build configuration list for PBXNativeTarget "Put.io-KitTests" */;
 			buildPhases = (
-				OBJ_263 /* Sources */,
-				OBJ_266 /* Frameworks */,
+				OBJ_172 /* Sources */,
+				OBJ_185 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_270 /* PBXTargetDependency */,
-				OBJ_271 /* PBXTargetDependency */,
-				OBJ_272 /* PBXTargetDependency */,
+				OBJ_187 /* PBXTargetDependency */,
 			);
 			name = "Put.io-KitTests";
 			productName = Put_io_KitTests;
@@ -752,9 +584,9 @@
 		};
 		"Put.io-Kit::SwiftPMPackageDescription" /* Put.io-KitPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_249 /* Build configuration list for PBXNativeTarget "Put.io-KitPackageDescription" */;
+			buildConfigurationList = OBJ_158 /* Build configuration list for PBXNativeTarget "Put.io-KitPackageDescription" */;
 			buildPhases = (
-				OBJ_252 /* Sources */,
+				OBJ_161 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -762,36 +594,6 @@
 			);
 			name = "Put.io-KitPackageDescription";
 			productName = "Put.io-KitPackageDescription";
-			productType = "com.apple.product-type.framework";
-		};
-		"ReduxMe::ReduxMe" /* ReduxMe */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_273 /* Build configuration list for PBXNativeTarget "ReduxMe" */;
-			buildPhases = (
-				OBJ_276 /* Sources */,
-				OBJ_298 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ReduxMe;
-			productName = ReduxMe;
-			productReference = "ReduxMe::ReduxMe::Product" /* ReduxMe.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"ReduxMe::SwiftPMPackageDescription" /* ReduxMePackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_300 /* Build configuration list for PBXNativeTarget "ReduxMePackageDescription" */;
-			buildPhases = (
-				OBJ_303 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ReduxMePackageDescription;
-			productName = ReduxMePackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -805,294 +607,121 @@
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Put.io-Kit" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_139 /* Products */;
+			productRefGroup = OBJ_99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"NetworkMe::NetworkMe" /* NetworkMe */,
-				"NetworkMe::SwiftPMPackageDescription" /* NetworkMePackageDescription */,
 				"Put.io-Kit::Put.io-Kit" /* Put.io-Kit */,
 				"Put.io-Kit::SwiftPMPackageDescription" /* Put.io-KitPackageDescription */,
 				"Put.io-Kit::Put.io-KitPackageTests::ProductTarget" /* Put.io-KitPackageTests */,
 				"Put.io-Kit::Put.io-KitTests" /* Put.io-KitTests */,
-				"ReduxMe::ReduxMe" /* ReduxMe */,
-				"ReduxMe::SwiftPMPackageDescription" /* ReduxMePackageDescription */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_150 /* Sources */ = {
+		OBJ_110 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_151 /* NetworkMe+FileRetriever.swift in Sources */,
-				OBJ_152 /* NetworkeMeResponse+HeaderParser.swift in Sources */,
-				OBJ_153 /* NetworkMe+HTTPResponseCodeValidator.swift in Sources */,
-				OBJ_154 /* NetworkMe+Router.swift in Sources */,
-				OBJ_155 /* NetworkMe+HTTPParameter.swift in Sources */,
-				OBJ_156 /* NetworkMe+URLQueryItemEncoder.swift in Sources */,
-				OBJ_157 /* NetworMe+Scheme.swift in Sources */,
-				OBJ_158 /* NetworkMe+Accept.swift in Sources */,
-				OBJ_159 /* NetworkMe+ContentType.swift in Sources */,
-				OBJ_160 /* NetworkMe+Header.swift in Sources */,
-				OBJ_161 /* NetworkMe+Method.swift in Sources */,
-				OBJ_162 /* NetworkMe+TaskType.swift in Sources */,
-				OBJ_163 /* NetworkMeHeader+Generic.swift in Sources */,
-				OBJ_164 /* NetworkMeHeader+Request.swift in Sources */,
-				OBJ_165 /* NetworkMeHeader+Response.swift in Sources */,
-				OBJ_166 /* NetworkMeHeaderGeneric+Connection.swift in Sources */,
-				OBJ_167 /* NetworkMeHeaderRequest+Authorization.swift in Sources */,
-				OBJ_168 /* NetworkMeHeaderRequest+CacheControl.swift in Sources */,
-				OBJ_169 /* NetworkMeHeaderResponse+CacheControl.swift in Sources */,
-				OBJ_170 /* NetworkMeResponse+Error.swift in Sources */,
-				OBJ_171 /* NetworkMeRouter+NetworkError.swift in Sources */,
-				OBJ_172 /* DateFormatter+NetworkMeDateProviding.swift in Sources */,
-				OBJ_173 /* JSONDecoder+NetworkMeDecoding.swift in Sources */,
-				OBJ_174 /* JSONEncoder+NetworkMeEncoding.swift in Sources */,
-				OBJ_175 /* URLSession+NetworkMeURLSessionProtocol.swift in Sources */,
-				OBJ_176 /* NetworkMe+EmptyDecodable.swift in Sources */,
-				OBJ_177 /* NetworkMe+TransformableKeyValuePair.swift in Sources */,
-				OBJ_178 /* NetworMeResponseValidatorProtocol.swift in Sources */,
-				OBJ_179 /* NetworkMeDateProviding.swift in Sources */,
-				OBJ_180 /* NetworkMeDecoding.swift in Sources */,
-				OBJ_181 /* NetworkMeEncoding.swift in Sources */,
-				OBJ_182 /* NetworkMeEndpointProtocol.swift in Sources */,
-				OBJ_183 /* NetworkMeFileRetrieving.swift in Sources */,
-				OBJ_184 /* NetworkMeHeaderParserProtocol.swift in Sources */,
-				OBJ_185 /* NetworkMeHeaderProtocol.swift in Sources */,
-				OBJ_186 /* NetworkMeRouting.swift in Sources */,
-				OBJ_187 /* NetworkMeURLSessionProtocol.swift in Sources */,
-				OBJ_188 /* NetworkMe.swift in Sources */,
+				OBJ_111 /* Data+MimeType.swift in Sources */,
+				OBJ_112 /* Data+MultipartForm.swift in Sources */,
+				OBJ_113 /* Decodable+GenericInit.swift in Sources */,
+				OBJ_114 /* JSONDecoder+PutioKit.swift in Sources */,
+				OBJ_115 /* MimeType.swift in Sources */,
+				OBJ_116 /* Swime.swift in Sources */,
+				OBJ_117 /* ErrorModel.swift in Sources */,
+				OBJ_118 /* SuccessModel.swift in Sources */,
+				OBJ_119 /* CredentialsStoring.swift in Sources */,
+				OBJ_120 /* FileOrTransferProtocol.swift in Sources */,
+				OBJ_121 /* URLQueryItemConvertible.swift in Sources */,
+				OBJ_122 /* AccountService.swift in Sources */,
+				OBJ_123 /* AccountService+Model.swift in Sources */,
+				OBJ_124 /* AuthenticationService.swift in Sources */,
+				OBJ_125 /* AuthenticationService+Models.swift in Sources */,
+				OBJ_126 /* ConfigService.swift in Sources */,
+				OBJ_127 /* EventsService.swift in Sources */,
+				OBJ_128 /* EventsService+Models.swift in Sources */,
+				OBJ_129 /* FilesService.swift in Sources */,
+				OBJ_130 /* FilesService+Model.swift in Sources */,
+				OBJ_131 /* FilesService+CRUD.swift in Sources */,
+				OBJ_132 /* FilesService+Listing.swift in Sources */,
+				OBJ_133 /* FilesService+Searching.swift in Sources */,
+				OBJ_134 /* FilesService+VideoOperations.swift in Sources */,
+				OBJ_135 /* FriendsService.swift in Sources */,
+				OBJ_136 /* FriendsService+Model.swift in Sources */,
+				OBJ_137 /* RSSService+Models.swift in Sources */,
+				OBJ_138 /* RSSService.swift in Sources */,
+				OBJ_139 /* SharesService+Model.swift in Sources */,
+				OBJ_140 /* SharesService.swift in Sources */,
+				OBJ_141 /* TransfersService+Model.swift in Sources */,
+				OBJ_142 /* TransfersService.swift in Sources */,
+				OBJ_143 /* ZipService+Models.swift in Sources */,
+				OBJ_144 /* ZipService.swift in Sources */,
+				OBJ_145 /* ApiClientModel.swift in Sources */,
+				OBJ_146 /* CompletionTypes.swift in Sources */,
+				OBJ_147 /* Constants.swift in Sources */,
+				OBJ_148 /* CreatedAndUpdatedDateFormatter.swift in Sources */,
+				OBJ_149 /* HTTPMethod.swift in Sources */,
+				OBJ_150 /* Helpers.swift in Sources */,
+				OBJ_151 /* NetworkHandler.swift in Sources */,
+				OBJ_152 /* PutIOKitError.swift in Sources */,
+				OBJ_153 /* URLRequest+HeaderPair.swift in Sources */,
+				OBJ_154 /* URLRequest+PutIOKit.swift in Sources */,
+				OBJ_155 /* URLRequest+QueryItemEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_194 /* Sources */ = {
+		OBJ_161 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_195 /* Package.swift in Sources */,
+				OBJ_162 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_200 /* Sources */ = {
+		OBJ_172 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_201 /* AccountEndpoint.swift in Sources */,
-				OBJ_202 /* AuthenticationEndpoint.swift in Sources */,
-				OBJ_203 /* AuthorizedEndpoint.swift in Sources */,
-				OBJ_204 /* ConfigEndpoint.swift in Sources */,
-				OBJ_205 /* EventsEndpoint.swift in Sources */,
-				OBJ_206 /* FilesEndpoint.swift in Sources */,
-				OBJ_207 /* FriendsEndpoint.swift in Sources */,
-				OBJ_208 /* RSSEndpoint.swift in Sources */,
-				OBJ_209 /* SharesEndpoint.swift in Sources */,
-				OBJ_210 /* TransfersEndpoint.swift in Sources */,
-				OBJ_211 /* ZipsEndpoint.swift in Sources */,
-				OBJ_212 /* Encodable+ConcreteType.swift in Sources */,
-				OBJ_213 /* AddTransferParametersModel.swift in Sources */,
-				OBJ_214 /* CreateFolderParametersModel.swift in Sources */,
-				OBJ_215 /* DownloadHLSPlaylistParametersModel.swift in Sources */,
-				OBJ_216 /* DownloadSubtitleFileParametersModel.swift in Sources */,
-				OBJ_217 /* ExtractArchiveParametersModel.swift in Sources */,
-				OBJ_218 /* FileListContinueParametersModel.swift in Sources */,
-				OBJ_219 /* FileListParametersModel.swift in Sources */,
-				OBJ_220 /* FileSearchContinueParametersModel.swift in Sources */,
-				OBJ_221 /* FileSearchParametersModels.swift in Sources */,
-				OBJ_222 /* MoveFilesParametersModel.swift in Sources */,
-				OBJ_223 /* RenameFileParametersModel.swift in Sources */,
-				OBJ_224 /* SetVideoPositionParametersModel.swift in Sources */,
-				OBJ_225 /* ShareFilesWithAllFriendsParametersModel.swift in Sources */,
-				OBJ_226 /* ShareFilesWithFriendsParametersModel.swift in Sources */,
-				OBJ_227 /* UploadFileParametersModel.swift in Sources */,
-				OBJ_228 /* AccessTokenModel.swift in Sources */,
-				OBJ_229 /* AccountInfoModel.swift in Sources */,
-				OBJ_230 /* AccountSettingsModel.swift in Sources */,
-				OBJ_231 /* ApiClientModel.swift in Sources */,
-				OBJ_232 /* ErrorModel.swift in Sources */,
-				OBJ_233 /* ExtractionModel.swift in Sources */,
-				OBJ_234 /* FileModel.swift in Sources */,
-				OBJ_235 /* FileTypeModel.swift in Sources */,
-				OBJ_236 /* FriendModel.swift in Sources */,
-				OBJ_237 /* RSSFeedModel.swift in Sources */,
-				OBJ_238 /* TransferModel.swift in Sources */,
-				OBJ_239 /* PutioKit.swift in Sources */,
-				OBJ_240 /* AuthenticationService.swift in Sources */,
-				OBJ_241 /* PutioKit+Constants.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_252 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_253 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_263 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_265 /* XCTestManifests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_276 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_277 /* ReduxMe+CompoundReducer.swift in Sources */,
-				OBJ_278 /* ReduxMe+Dispatcher.swift in Sources */,
-				OBJ_279 /* ReduxMe+DisposableBag.swift in Sources */,
-				OBJ_280 /* ReduxMe+Observable.swift in Sources */,
-				OBJ_281 /* ReduxMe+SerialDispatchQueue.swift in Sources */,
-				OBJ_282 /* ReduxMe+Store.swift in Sources */,
-				OBJ_283 /* ReduxMeActionDispatching.swift in Sources */,
-				OBJ_284 /* ReduxMeActionProtocol.swift in Sources */,
-				OBJ_285 /* ReduxMeDispatching.swift in Sources */,
-				OBJ_286 /* ReduxMeDisposable.swift in Sources */,
-				OBJ_287 /* ReduxMeDisposableBagProtocol.swift in Sources */,
-				OBJ_288 /* ReduxMeListenerProtocol.swift in Sources */,
-				OBJ_289 /* ReduxMeMiddlewareProtocol.swift in Sources */,
-				OBJ_290 /* ReduxMeObservableProtocol.swift in Sources */,
-				OBJ_291 /* ReduxMeReducerProtocol.swift in Sources */,
-				OBJ_292 /* ReduxMeSerialDispatchQueueing.swift in Sources */,
-				OBJ_293 /* ReduxMeStateProtocol.swift in Sources */,
-				OBJ_294 /* ReduxMeStoreProtocol.swift in Sources */,
-				OBJ_295 /* ReduxMeSubstateListenerProtocol.swift in Sources */,
-				OBJ_296 /* ReduxMeSubstateProtocol.swift in Sources */,
-				OBJ_297 /* ReduxMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_303 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_304 /* Package.swift in Sources */,
+				OBJ_173 /* Mocks+NetworkRouter.swift in Sources */,
+				OBJ_174 /* PutioKit+Mocks.swift in Sources */,
+				OBJ_175 /* FilesServiceTests.swift in Sources */,
+				OBJ_176 /* PutioKit+Stubs.swift in Sources */,
+				OBJ_177 /* Stubs+ApiClientModel.swift in Sources */,
+				OBJ_178 /* Stubs+FileRetriever.swift in Sources */,
+				OBJ_179 /* Stubs+OperationQueue.swift in Sources */,
+				OBJ_180 /* Stubs+RequestModels.swift in Sources */,
+				OBJ_181 /* Stubs+Responses.swift in Sources */,
+				OBJ_182 /* Stubs+Router.swift in Sources */,
+				OBJ_183 /* Stubs+URLSession.swift in Sources */,
+				OBJ_184 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_245 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "ReduxMe::ReduxMe" /* ReduxMe */;
-			targetProxy = 40A5290622E4C6910090C497 /* PBXContainerItemProxy */;
-		};
-		OBJ_247 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "NetworkMe::NetworkMe" /* NetworkMe */;
-			targetProxy = 40A5290722E4C6910090C497 /* PBXContainerItemProxy */;
-		};
-		OBJ_258 /* PBXTargetDependency */ = {
+		OBJ_167 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Put.io-Kit::Put.io-KitTests" /* Put.io-KitTests */;
-			targetProxy = 40A5290B22E4C6930090C497 /* PBXContainerItemProxy */;
+			targetProxy = 4093200A2419A727000013F7 /* PBXContainerItemProxy */;
 		};
-		OBJ_270 /* PBXTargetDependency */ = {
+		OBJ_187 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Put.io-Kit::Put.io-Kit" /* Put.io-Kit */;
-			targetProxy = 40A5290822E4C6920090C497 /* PBXContainerItemProxy */;
-		};
-		OBJ_271 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "ReduxMe::ReduxMe" /* ReduxMe */;
-			targetProxy = 40A5290922E4C6920090C497 /* PBXContainerItemProxy */;
-		};
-		OBJ_272 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "NetworkMe::NetworkMe" /* NetworkMe */;
-			targetProxy = 40A5290A22E4C6920090C497 /* PBXContainerItemProxy */;
+			targetProxy = 409320092419A726000013F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_148 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "Put.io-Kit.xcodeproj/NetworkMe_Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = NetworkMe;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = NetworkMe;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_149 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "Put.io-Kit.xcodeproj/NetworkMe_Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = NetworkMe;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = NetworkMe;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_192 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_193 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_198 /* Debug */ = {
+		OBJ_108 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1102,9 +731,9 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Put.io-Kit.xcodeproj/Put_io_Kit_Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1115,12 +744,12 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = "Put.io-Kit";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
-		OBJ_199 /* Release */ = {
+		OBJ_109 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1130,9 +759,9 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Put.io-Kit.xcodeproj/Put_io_Kit_Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -1143,42 +772,42 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = "Put.io-Kit";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
-		OBJ_250 /* Debug */ = {
+		OBJ_159 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		OBJ_251 /* Release */ = {
+		OBJ_160 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		OBJ_256 /* Debug */ = {
+		OBJ_165 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_257 /* Release */ = {
+		OBJ_166 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_261 /* Debug */ = {
+		OBJ_170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1189,21 +818,21 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Put.io-Kit.xcodeproj/Put_io_KitTests_Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = "Put.io-KitTests";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Debug;
 		};
-		OBJ_262 /* Release */ = {
+		OBJ_171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1214,73 +843,17 @@
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Put.io-Kit.xcodeproj/Put_io_KitTests_Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = "Put.io-KitTests";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_274 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "Put.io-Kit.xcodeproj/ReduxMe_Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ReduxMe;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = ReduxMe;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_275 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "Put.io-Kit.xcodeproj/ReduxMe_Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ReduxMe;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = ReduxMe;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
@@ -1299,9 +872,9 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-DXcode";
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
@@ -1310,24 +883,6 @@
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
-		};
-		OBJ_301 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_302 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
 		};
 		OBJ_4 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1342,8 +897,8 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
@@ -1356,29 +911,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_147 /* Build configuration list for PBXNativeTarget "NetworkMe" */ = {
+		OBJ_107 /* Build configuration list for PBXNativeTarget "Put.io-Kit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_148 /* Debug */,
-				OBJ_149 /* Release */,
+				OBJ_108 /* Debug */,
+				OBJ_109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_191 /* Build configuration list for PBXNativeTarget "NetworkMePackageDescription" */ = {
+		OBJ_158 /* Build configuration list for PBXNativeTarget "Put.io-KitPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_192 /* Debug */,
-				OBJ_193 /* Release */,
+				OBJ_159 /* Debug */,
+				OBJ_160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_197 /* Build configuration list for PBXNativeTarget "Put.io-Kit" */ = {
+		OBJ_164 /* Build configuration list for PBXAggregateTarget "Put.io-KitPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_198 /* Debug */,
-				OBJ_199 /* Release */,
+				OBJ_165 /* Debug */,
+				OBJ_166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_169 /* Build configuration list for PBXNativeTarget "Put.io-KitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_170 /* Debug */,
+				OBJ_171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1388,51 +952,6 @@
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
 				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_249 /* Build configuration list for PBXNativeTarget "Put.io-KitPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_250 /* Debug */,
-				OBJ_251 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_255 /* Build configuration list for PBXAggregateTarget "Put.io-KitPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_256 /* Debug */,
-				OBJ_257 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_260 /* Build configuration list for PBXNativeTarget "Put.io-KitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_261 /* Debug */,
-				OBJ_262 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_273 /* Build configuration list for PBXNativeTarget "ReduxMe" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_274 /* Debug */,
-				OBJ_275 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_300 /* Build configuration list for PBXNativeTarget "ReduxMePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_301 /* Debug */,
-				OBJ_302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
