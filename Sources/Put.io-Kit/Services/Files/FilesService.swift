@@ -18,7 +18,7 @@ public enum FilesService {
     public typealias ExtractionsCompletion = (Result<[FilesService.Model.Extraction], Error>) -> Void
     public typealias SubtitlesCompletion = (Result<[FilesService.Model.Subtitle], Error>) -> Void
 
-    public static func authenticationHeader(credentialsStore: CredentialsStoring) -> URLRequest.HeaderPair? {
+    static func authenticationHeader(credentialsStore: CredentialsStoring) -> URLRequest.HeaderPair? {
         URLRequest.HeaderPair.bearerAuthorization(credentialsStore: credentialsStore)
     }
 }
