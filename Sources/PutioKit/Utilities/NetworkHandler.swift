@@ -77,6 +77,7 @@ extension URLSession: NetworkHandling {
         with request: URLRequest,
         completion: @escaping (Result<T, Error>) -> Void) -> AnyCancellable {
         dataTaskPublisher(for: request)
+            .receive(on: DispatchQueue.global())
             .tryMap { try self.validate($0) }
             .tryMap { try self.decode($0.data) }
             .sink(receiveCompletion: { _completion in
@@ -93,17 +94,19 @@ extension URLSession: NetworkHandling {
 
         let downstream = PassthroughSubject<(data: Data, response: URLResponse), Error>()
 
-        self.uploadTask(with: request, from: data) { (data, response, error) in
-            switch (data, response, error) {
-                case let (data, response?, nil):
-                    downstream.send((data ?? Data(), response))
-                    downstream.send(completion: .finished)
-                case let (_, _, error as URLError):
-                    downstream.send(completion: .failure(error))
-                default:
-                    downstream.send(completion: .failure(URLError(.unknown)))
-            }
-        }.resume()
+        DispatchQueue.global().async {
+            self.uploadTask(with: request, from: data) { (data, response, error) in
+                switch (data, response, error) {
+                    case let (data, response?, nil):
+                        downstream.send((data ?? Data(), response))
+                        downstream.send(completion: .finished)
+                    case let (_, _, error as URLError):
+                        downstream.send(completion: .failure(error))
+                    default:
+                        downstream.send(completion: .failure(URLError(.unknown)))
+                }
+            }.resume()
+        }
 
         return downstream
             .tryMap { try self.validate($0) }
@@ -116,6 +119,7 @@ extension URLSession: NetworkHandling {
         completion: @escaping (Result<T, Error>) -> Void) -> AnyCancellable {
 
         startUploadTask(with: request, data: data)
+            .receive(on: DispatchQueue.global())
             .tryMap { try self.decode($0.data) }
             .sink(receiveCompletion: { _completion in
                 switch _completion {
