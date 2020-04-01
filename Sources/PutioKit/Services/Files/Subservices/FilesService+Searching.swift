@@ -28,7 +28,7 @@ public extension FilesService {
     }
 }
 
-private  extension FilesService.Searching {
+private extension FilesService.Searching {
 
     func searchFiles(
         url: URL,

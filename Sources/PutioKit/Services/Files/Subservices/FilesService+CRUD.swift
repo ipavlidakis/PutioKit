@@ -28,7 +28,7 @@ public extension FilesService {
     }
 }
 
-extension FilesService.CRUD {
+public extension FilesService.CRUD {
 
     func createFolder(
         parameters: FilesService.Model.CreateFolderParameters,
