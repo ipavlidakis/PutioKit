@@ -398,10 +398,10 @@ public extension FilesService.Model {
             case srt, webvtt
         }
 
-        let key: String
-        let language: String
-        let name: String
-        let source: Source
+        public let key: String
+        public let language: String
+        public let name: String
+        public let source: Source
 
         private enum CodingKeys: String, CodingKey { case key, language, name, source }
     }
