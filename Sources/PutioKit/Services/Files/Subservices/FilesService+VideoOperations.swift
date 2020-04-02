@@ -93,6 +93,7 @@ public extension FilesService.VideoOperations {
                             language: $0.language,
                             name: $0.name,
                             source: $0.source,
+                            url: $0.url,
                             srtURL: srtURL,
                             webvttURL: webvttURL)
                     }

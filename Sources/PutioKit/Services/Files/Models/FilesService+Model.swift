@@ -402,9 +402,10 @@ public extension FilesService.Model {
         public let language: String
         public let name: String
         public let source: Source
+        public let url: URL?
         public let srtURL: URL?
         public let webvttURL: URL?
 
-        private enum CodingKeys: String, CodingKey { case key, language, name, source, srtURL, webvttURL }
+        private enum CodingKeys: String, CodingKey { case key, language, name, source, srtURL, webvttURL, url }
     }
 }
