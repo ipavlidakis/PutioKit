@@ -28,7 +28,7 @@ public extension FilesService {
     }
 }
 
-public extension FilesService.VideoOperations {
+extension FilesService.VideoOperations {
 
     func availableSubtitles(
         for videoFile: FilesService.Model.File,
@@ -60,9 +60,52 @@ public extension FilesService.VideoOperations {
             return nil
         }
 
+        let _completion: FilesService.SubtitlesCompletion = { result in
+
+            switch result {
+                case .success(let subtitles):
+
+                    let url = Constants.baseURL
+                        .appendingPathComponent("files")
+                        .appendingPathComponent("\(videoFile.id)")
+                        .appendingPathComponent("subtitles")
+
+
+                    let rewrite: [FilesService.Model.Subtitle] = subtitles.map {
+
+                        let srtURL = URLRequest(
+                            method: .get,
+                            url: url.appendingPathComponent($0.key),
+                            queryItems: [
+                                URLQueryItem(name: "format", value: FilesService.Model.Subtitle.Format.srt.rawValue),
+                                URLQueryItem(name: "oauth_token", value: self.credentialsStore.accessToken ?? "")
+                            ])?.url
+                        let webvttURL = URLRequest(
+                            method: .get,
+                            url: url.appendingPathComponent($0.key),
+                            queryItems: [
+                                URLQueryItem(name: "format", value: FilesService.Model.Subtitle.Format.webvtt.rawValue),
+                                URLQueryItem(name: "oauth_token", value: self.credentialsStore.accessToken ?? "")
+                        ])?.url
+
+                        return FilesService.Model.Subtitle(
+                            key: $0.key,
+                            language: $0.language,
+                            name: $0.name,
+                            source: $0.source,
+                            srtURL: srtURL,
+                            webvttURL: webvttURL)
+                    }
+
+                    completion(.success(rewrite))
+                case .failure:
+                    completion(result)
+            }
+        }
+
         return networkHandler.startDataTask(
             with: request,
-            completion: Helpers.dictionaryKeyValueCompletion(key: "subtitles", completion: completion))
+            completion: Helpers.dictionaryKeyValueCompletion(key: "subtitles", completion: _completion))
     }
 
     func download(
