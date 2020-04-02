@@ -28,7 +28,7 @@ public extension FilesService {
     }
 }
 
-extension FilesService.VideoOperations {
+public extension FilesService.VideoOperations {
 
     func availableSubtitles(
         for videoFile: FilesService.Model.File,
