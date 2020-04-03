@@ -11,6 +11,9 @@ import Combine
 public protocol NetworkHandling {
 
     func startDataTask<T>(
+        with request: URLRequest) -> AnyPublisher<T, Error>
+
+    func startDataTask<T>(
         with request: URLRequest,
         completion: @escaping (Result<T, Error>) -> Void) -> AnyCancellable
 
@@ -71,6 +74,25 @@ extension URLSession: NetworkHandling {
         guard let decoded = genericType as? T else { throw PutIOKitError.parsingFailed }
 
         return decoded
+    }
+
+    public func decodeResult<T>(_ data: Data) throws -> Result<T, Error> {
+
+        do {
+            let result: T = try decode(data)
+            return .success(result)
+        } catch(let exception) {
+            return .failure(exception)
+        }
+    }
+
+    public func startDataTask<T>(
+        with request: URLRequest) -> AnyPublisher<T, Error> {
+        dataTaskPublisher(for: request)
+            .receive(on: DispatchQueue.global())
+            .tryMap { try self.validate($0) }
+            .tryMap { try self.decode($0.data) }
+            .eraseToAnyPublisher()
     }
 
     public func startDataTask<T>(

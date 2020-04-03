@@ -17,6 +17,7 @@ public enum PutIOKitError: Error {
     case invalidURL
     case parsingFailed
     case invalidResponse(String)
+    case failedToDownloadContentOfFile
 }
 
 public extension PutIOKitError {
