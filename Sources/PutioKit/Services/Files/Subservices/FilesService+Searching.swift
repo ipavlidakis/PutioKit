@@ -30,6 +30,38 @@ public extension FilesService {
 
 private extension FilesService.Searching {
 
+    func rewriteCompletion(
+        _ result: Result<FilesService.Model.FetchedFiles, Error>,
+        completion: @escaping FilesService.FetchFilesCompletion) {
+
+        switch result {
+            case .success(let fetchedFiles):
+                let files: [FilesService.Model.File] = fetchedFiles.files.map { original in
+                    guard original.type == .video else { return original }
+                    let url = Constants.baseURL
+                        .appendingPathComponent("files")
+                        .appendingPathComponent("\(original.id)")
+                        .appendingPathComponent("hls")
+                        .appendingPathComponent("media.m3u8")
+
+                    let request = URLRequest(method: .get, url: url, queryItems: [
+                        URLQueryItem(name: "subtitle_key", value: "all"),
+                        URLQueryItem(name: "oauth_token", value: self.credentialsStore.accessToken ?? "")
+                    ])
+
+                    return original.mutate(playlistURL: request?.url)
+                }
+
+                completion(.success(FilesService.Model.FetchedFiles(
+                    files: files,
+                    parent: fetchedFiles.parent,
+                    total: fetchedFiles.total,
+                    cursor: fetchedFiles.cursor,
+                    status: fetchedFiles.status)))
+            case .failure: completion(result)
+        }
+    }
+
     func searchFiles(
         url: URL,
         method: HTTPMethod,
@@ -53,7 +85,9 @@ private extension FilesService.Searching {
             return nil
         }
 
-        return networkHandler.startDataTask(with: request, completion: completion)
+        return networkHandler.startDataTask(
+            with: request,
+            completion: { self.rewriteCompletion($0, completion: completion) })
     }
 }
 
