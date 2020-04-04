@@ -57,11 +57,11 @@ public extension FilesService.ImageOperations {
                 case .success(let url):
                     _ = ImageLoader.shared.loadImage(from: url).sink(receiveValue: {
                         guard let image = $0 else { return completion(.failure(PutIOKitError.parsingFailed)) }
-                        completion(.success(image))
+                        DispatchQueue.main.async { completion(.success(image)) }
                     })
                     break
                 case .failure(let error):
-                    completion(.failure(error))
+                    DispatchQueue.main.async { completion(.failure(error)) }
             }
         }
     }
