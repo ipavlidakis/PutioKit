@@ -52,6 +52,11 @@ public extension FilesService.ImageOperations {
             return nil
         }
 
+        if let cachedImage = ImageLoader.shared.image(for: file.id) {
+            completion (.success(cachedImage))
+            return nil
+        }
+
         return crudService.downloadURL(for: file.id) { result in
             switch result {
                 case .success(let url):

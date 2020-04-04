@@ -42,4 +42,13 @@ final class ImageLoader {
 
         return Just(image).eraseToAnyPublisher()
     }
+
+    func image(for key: AnyHashable) -> ImageCacheType.Image? {
+        return cache[key]
+    }
+
+    func cacheExists(for key: AnyHashable) -> Bool {
+
+        return cache[key] != nil
+    }
 }
