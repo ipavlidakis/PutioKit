@@ -35,9 +35,15 @@ extension NSImage {
         return NSImage(cgImage: decodedImage, size: size)
     }
 
+    func encodedImage() -> Data? { tiffRepresentation }
+
     var diskSize: Int {
         guard let cgImage = cgImage else { return 0 }
         return cgImage.bytesPerRow * cgImage.height
+    }
+
+    static func from(data: Data) -> NSImage? {
+        NSImage(data: data)
     }
 }
 

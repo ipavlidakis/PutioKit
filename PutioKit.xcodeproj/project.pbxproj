@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		40B72ED82438FE8800650965 /* ImagePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B72ED72438FE8800650965 /* ImagePersistence.swift */; };
 		40F104802437E0F70050EFE7 /* ImageCacheType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F1047F2437E0F70050EFE7 /* ImageCacheType.swift */; };
 		40F104832437E1710050EFE7 /* NSImage+Decoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F104822437E1710050EFE7 /* NSImage+Decoded.swift */; };
 		40F104852437E17A0050EFE7 /* UIImage+Decoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F104842437E17A0050EFE7 /* UIImage+Decoded.swift */; };
@@ -97,6 +98,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40B72ED72438FE8800650965 /* ImagePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePersistence.swift; sourceTree = "<group>"; };
 		40F1047F2437E0F70050EFE7 /* ImageCacheType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheType.swift; sourceTree = "<group>"; };
 		40F104822437E1710050EFE7 /* NSImage+Decoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+Decoded.swift"; sourceTree = "<group>"; };
 		40F104842437E17A0050EFE7 /* UIImage+Decoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Decoded.swift"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				40F104842437E17A0050EFE7 /* UIImage+Decoded.swift */,
 				40F104862437E3620050EFE7 /* ImageCache.swift */,
 				40F1048A2437E4E40050EFE7 /* ImageLoader.swift */,
+				40B72ED72438FE8800650965 /* ImagePersistence.swift */,
 			);
 			path = "Image Loading";
 			sourceTree = "<group>";
@@ -341,7 +344,7 @@
 			path = Friends;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -352,7 +355,6 @@
 				OBJ_89 /* LICENSE */,
 				OBJ_90 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_51 /* Models */ = {
@@ -585,7 +587,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -654,6 +656,7 @@
 				OBJ_122 /* RSSService+Models.swift in Sources */,
 				OBJ_123 /* RSSService.swift in Sources */,
 				40F104892437E4CA0050EFE7 /* NSCache+Convenience.swift in Sources */,
+				40B72ED82438FE8800650965 /* ImagePersistence.swift in Sources */,
 				OBJ_124 /* SharesService+Model.swift in Sources */,
 				OBJ_125 /* SharesService.swift in Sources */,
 				OBJ_126 /* TransfersService+Model.swift in Sources */,

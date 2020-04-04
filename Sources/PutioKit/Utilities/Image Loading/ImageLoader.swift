@@ -24,13 +24,15 @@ final class ImageLoader {
 
     func loadImage(from url: URL) -> AnyPublisher<ImageCacheType.Image?, Never> {
 
-        guard let image = cache[url] else {
+        let key = (url.host ?? "").appending(url.path)
+
+        guard let image = cache[key] else {
             return URLSession.shared.dataTaskPublisher(for: url)
                 .map { ImageCacheType.Image(data: $0.data) }
                 .catch { error in return Just(nil) }
                 .handleEvents(receiveOutput: {[weak self] image in
                     guard let image = image else { return }
-                    self?.cache[url] = image
+                    self?.cache[key] = image
                 })
                 .print("Image loading \(url):")
                 .subscribe(on: backgroundQueue)

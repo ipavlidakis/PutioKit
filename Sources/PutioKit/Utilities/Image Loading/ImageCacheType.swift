@@ -21,13 +21,13 @@ protocol ImageCacheType: class {
     #endif
 
     // Returns the image associated with a given url
-    func image(for url: URL) -> Image?
+    func image(for key: AnyHashable) -> Image?
     // Inserts the image of the specified url in the cache
-    func insertImage(_ image: Image?, for url: URL)
+    func insertImage(_ image: Image?, for key: AnyHashable)
     // Removes the image of the specified url in the cache
-    func removeImage(for url: URL)
+    func removeImage(for key: AnyHashable)
     // Removes all images from the cache
     func removeAllImages()
     // Accesses the value associated with the given key for reading and writing
-    subscript(_ url: URL) -> Image? { get set }
+    subscript(_ key: AnyHashable) -> Image? { get set }
 }

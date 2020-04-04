@@ -23,9 +23,15 @@ extension UIImage {
         return UIImage(cgImage: decodedImage)
     }
 
+    func encodedImage() -> Data? { jpegData(compressionQuality: 1) }
+
     var diskSize: Int {
         guard let cgImage = cgImage else { return 0 }
         return cgImage.bytesPerRow * cgImage.height
+    }
+
+    static func from(data: Data) -> UIImage? {
+        UIImage(data: data)
     }
 }
 
