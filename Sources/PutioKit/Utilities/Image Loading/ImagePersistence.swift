@@ -14,7 +14,7 @@ import UIKit
 
 final class ImagePersistence {
 
-    private var existingFiles: Set<AnyHashable> = Set()
+    private var existingFiles: Set<String> = Set()
     private let fileManager: FileManager
     private let operationQueue = OperationQueue(maxConcurrentOperationCount: 1)
     private lazy var cachesDirectoryURL: URL = try! self.fileManager.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -46,10 +46,9 @@ final class ImagePersistence {
     private func loadContentsInCache() {
 
         do {
-            let files = try fileManager.contentsOfDirectory(at: cachesDirectoryURL, includingPropertiesForKeys: nil).map {
-                $0.lastPathComponent
-            }
-            existingFiles = Set(arrayLiteral: files)
+            let files = try fileManager.contentsOfDirectory(at: cachesDirectoryURL, includingPropertiesForKeys: nil)
+                .map { $0.lastPathComponent }
+            existingFiles = Set(files)
         } catch {
             print("Error while enumerating image caches: \(error.localizedDescription)")
         }
@@ -58,7 +57,7 @@ final class ImagePersistence {
 
 extension ImagePersistence {
 
-    func persist(image: ImageCacheType.Image, key: AnyHashable) {
+    func persist(image: ImageCacheType.Image, key: String) {
 
         let url = cachesDirectoryURL.appendingPathComponent(key.description)
         operationQueue.addOperation { [weak self] in
@@ -73,18 +72,18 @@ extension ImagePersistence {
         }
     }
 
-    func imageForKeyExists(key: AnyHashable) -> Bool {
+    func imageForKeyExists(key: String) -> Bool {
         existingFiles.contains(key)
     }
 
-    func fetchImage(for key: AnyHashable) -> ImageCacheType.Image? {
+    func fetchImage(for key: String) -> ImageCacheType.Image? {
         guard imageForKeyExists(key: key) else {
             existingFiles.remove(key)
             print("ERROR: file for key: \(key) doesn't exist in diskCache")
             return nil
         }
 
-        let url = cachesDirectoryURL.appendingPathComponent(key.description)
+        let url = cachesDirectoryURL.appendingPathComponent(key)
         guard let data = try? Data(contentsOf: url) else {
             existingFiles.remove(key)
             print("ERROR: cache miss for key: \(key)")

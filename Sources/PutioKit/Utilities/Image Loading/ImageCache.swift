@@ -45,7 +45,7 @@ final class ImageCache: ImageCacheType {
             let decodedImage = image.decodedImage()
             decodedImageCache.setObject(image as AnyObject, forKey: key as AnyObject, cost: decodedImage.diskSize)
             return decodedImage
-        } else if let loadedImage = diskImageCache?.fetchImage(for: key) {
+        } else if let loadedImage = diskImageCache?.fetchImage(for: key.description) {
             let decompressedImage = loadedImage.decodedImage()
             lock.lock(); defer { lock.unlock() }
             imageCache.setObject(decompressedImage, forKey: key as AnyObject, cost: 1)
@@ -62,7 +62,7 @@ final class ImageCache: ImageCacheType {
         lock.lock(); defer { lock.unlock() }
         imageCache.setObject(decompressedImage, forKey: key as AnyObject, cost: 1)
         decodedImageCache.setObject(image as AnyObject, forKey: key as AnyObject, cost: decompressedImage.diskSize)
-        diskImageCache?.persist(image: decompressedImage, key: key)
+        diskImageCache?.persist(image: decompressedImage, key: key.description)
     }
 
     func removeImage(for key: AnyHashable) {
