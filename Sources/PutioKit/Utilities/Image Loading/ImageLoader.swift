@@ -24,7 +24,7 @@ final class ImageLoader {
 
     func loadImage(from url: URL) -> AnyPublisher<ImageCacheType.Image?, Never> {
 
-        let key = (url.host ?? "").appending(url.path)
+        let key = url.lastPathComponent
 
         guard let image = cache[key] else {
             return URLSession.shared.dataTaskPublisher(for: url)
