@@ -47,7 +47,7 @@ final class ImageCache: ImageCacheType {
             return decodedImage
         } else if let loadedImage = diskImageCache?.fetchImage(for: key.description) {
             let decompressedImage = loadedImage.decodedImage()
-            lock.lock(); defer { lock.unlock() }
+//            lock.lock(); defer { lock.unlock() }
             imageCache.setObject(decompressedImage, forKey: key as AnyObject, cost: 1)
             decodedImageCache.setObject(image as AnyObject, forKey: key as AnyObject, cost: decompressedImage.diskSize)
             return loadedImage
