@@ -61,6 +61,9 @@ public extension FilesService.Model {
         public let mp4Size: Int?
         public let streamURL: URL?
         public let playlistURL: URL?
+        public let startFrom: Int?
+
+        public var hasBeenWatched: Bool { (startFrom ?? 0) > 0 }
 
         func mutate(playlistURL: URL?) -> File {
             FilesService.Model.File(
@@ -78,7 +81,8 @@ public extension FilesService.Model {
                 size: size,
                 mp4Size: mp4Size,
                 streamURL: streamURL,
-                playlistURL: playlistURL)
+                playlistURL: playlistURL,
+                startFrom: startFrom)
         }
 
         private enum CodingKeys: String, CodingKey {
@@ -98,6 +102,7 @@ public extension FilesService.Model {
             case mp4Size = "mp4_size"
             case streamURL = "stream_url"
             case playlistURL = "playlistURL"
+            case startFrom = "start_from"
         }
     }
 }
