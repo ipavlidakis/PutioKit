@@ -53,7 +53,7 @@ public extension FilesService.ImageOperations {
         }
 
         if let cachedImage = ImageLoader.shared.image(for: file.id) {
-            completion (.success(cachedImage))
+            DispatchQueue.main.async { completion (.success(cachedImage)) }
             return nil
         }
 
