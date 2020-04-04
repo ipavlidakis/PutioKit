@@ -79,16 +79,31 @@ extension ImagePersistence {
 
     func fetchImage(for key: AnyHashable) -> ImageCacheType.Image? {
         guard imageForKeyExists(key: key) else {
+            existingFiles.remove(key)
             print("ERROR: file for key: \(key) doesn't exist in diskCache")
             return nil
         }
 
         let url = cachesDirectoryURL.appendingPathComponent(key.description)
         guard let data = try? Data(contentsOf: url) else {
+            existingFiles.remove(key)
             print("ERROR: cache miss for key: \(key)")
             return nil
         }
 
         return .from(data: data)
+    }
+
+    func removeImage(for key: AnyHashable) {
+
+        let url = cachesDirectoryURL.appendingPathComponent(key.description)
+
+        operationQueue.addOperation { [weak self] in
+            do {
+                try self?.fileManager.removeItem(at: url)
+            } catch(let exception) {
+                debugPrint("WARNING: Deletion of item at \(url) failed! \(exception)")
+            }
+        }
     }
 }

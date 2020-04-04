@@ -69,6 +69,7 @@ final class ImageCache: ImageCacheType {
         lock.lock(); defer { lock.unlock() }
         imageCache.removeObject(forKey: key as AnyObject)
         decodedImageCache.removeObject(forKey: key as AnyObject)
+        diskImageCache?.removeImage(for: key)
     }
 
     func removeAllImages() {
