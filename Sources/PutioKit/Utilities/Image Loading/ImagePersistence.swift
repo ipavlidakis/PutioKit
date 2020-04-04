@@ -30,7 +30,7 @@ final class ImagePersistence {
         let cachesDirectoryURL = cachesDirectory.appendingPathComponent(imagesFolderName)
 
         if !fileManager.fileExists(atPath: cachesDirectoryURL.absoluteString) {
-            if (try? fileManager.createDirectory(at: cachesDirectory, withIntermediateDirectories: true, attributes: nil)) == nil {
+            if (try? fileManager.createDirectory(at: cachesDirectoryURL, withIntermediateDirectories: true, attributes: nil)) == nil {
                 return nil
             }
         }
