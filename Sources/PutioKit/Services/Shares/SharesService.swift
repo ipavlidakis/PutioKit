@@ -28,7 +28,7 @@ public struct SharesService {
     }
 }
 
-extension SharesService {
+public extension SharesService {
 
     func share(
         files: [Int],
