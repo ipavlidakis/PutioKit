@@ -220,8 +220,8 @@ public extension FilesService.Model {
 
     struct NextPageParameters: Codable, Equatable, Hashable, URLQueryItemConvertible {
 
-        let cursor: String
-        let perPage: Int?
+        public let cursor: String
+        public let perPage: Int?
 
         public init(cursor: String, perPage: Int? = nil) {
             self.cursor = cursor
@@ -248,8 +248,8 @@ public extension FilesService.Model {
 
     struct SearchParameters: Codable, Equatable, Hashable, URLQueryItemConvertible {
 
-        let query: String
-        let perPage: Int
+        public let query: String
+        public let perPage: Int
 
         public init(query: String, perPage: Int) {
             self.query = query
@@ -276,8 +276,8 @@ public extension FilesService.Model {
 
     struct CreateFolderParameters: Codable, Equatable, Hashable, URLQueryItemConvertible {
 
-        let name: String
-        let parentId: Int
+        public let name: String
+        public let parentId: Int
 
         public init(name: String, parentId: Int) {
             self.name = name
@@ -304,8 +304,8 @@ public extension FilesService.Model {
 
     struct RenameFileParameters: Codable, Equatable, Hashable, URLQueryItemConvertible {
 
-        let id: Int
-        let name: String
+        public let id: Int
+        public let name: String
 
         public init(id: Int, name: String) {
             self.id = id
@@ -333,8 +333,8 @@ public extension FilesService.Model {
 
     struct MoveFilesParameters: Codable, Equatable, Hashable {
 
-        let fileIds: [Int]
-        let parentId: Int
+        public let fileIds: [Int]
+        public let parentId: Int
 
         private enum CodingKeys: String, CodingKey {
             case fileIds = "file_ids"
@@ -347,9 +347,9 @@ public extension FilesService.Model {
 
     struct UploadFileParameters: Codable, Equatable, Hashable {
 
-        let file: Data
-        let filename: String
-        let parentId: Int
+        public let file: Data
+        public let filename: String
+        public let parentId: Int
 
         private enum CodingKeys: String, CodingKey {
             case file
@@ -372,9 +372,9 @@ public extension FilesService.Model {
             case error = "ERROR"
         }
 
-        let status: Status
-        let percentDone: Int
-        let size: Int
+        public let status: Status
+        public let percentDone: Int
+        public let size: Int
 
         private enum CodingKeys: String, CodingKey {
             case status
@@ -397,12 +397,12 @@ public extension FilesService.Model {
             case error = "ERROR"
         }
 
-        let id: Int
-        let name: String
-        let status: Status
-        let message: String
-        let parts: Int
-        let fileIds: [Int]
+        public let id: Int
+        public let name: String
+        public let status: Status
+        public let message: String
+        public let parts: Int
+        public let fileIds: [Int]
 
         private enum CodingKeys: String, CodingKey {
             case id, name, status, message
