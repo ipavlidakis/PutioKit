@@ -36,4 +36,11 @@ public extension PutIOKitError {
     enum Files: Error {
         case invalidMultipartData
     }
+
+    enum Share: Error {
+        public static func hasExceededLimit(_ error: Error) -> Bool {
+            guard let errorModel = error as? ErrorModel, errorModel.message == "PUBLIC_SHARE_EXCEEDED_LIMIT" else { return false }
+            return true
+        }
+    }
 }
