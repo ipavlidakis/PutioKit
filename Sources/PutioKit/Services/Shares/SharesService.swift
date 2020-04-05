@@ -75,6 +75,43 @@ extension SharesService {
         return networkHandler.startDataTask(with: request, completion: completion)
     }
 
+    func sharePublically(
+        fileId: Int,
+        username: String,
+        completion: @escaping (Result<URL, Error>) -> Void
+    ) -> AnyCancellable?  {
+
+        let url = Constants.baseURL
+            .appendingPathComponent("files")
+            .appendingPathComponent("\(fileId)")
+            .appendingPathComponent("share_public")
+
+        guard let authenticationHeader = FilesService.authenticationHeader(credentialsStore: credentialsStore) else {
+            completion(.failure(PutIOKitError.unauthorised))
+            return nil
+        }
+
+        let headers: [URLRequest.HeaderPair] = [
+            authenticationHeader,
+            .contentTypeJSON
+        ]
+
+        guard let request = URLRequest(method: .post, url: url, headers: headers) else {
+            completion(.failure(PutIOKitError.invalidURL))
+            return nil
+        }
+
+        return networkHandler.startDataTask(with: request, completion: Helpers.dictionaryKeyValueCompletion(key: "token", completion: { (result: Result<String, Error>) in
+            switch result {
+                case .success(let token):
+                    let url = Constants.shareURL.appendingPathComponent(username).appendingPathComponent(token)
+                    completion(.success(url))
+                case .failure(let error):
+                    completion(.failure(error))
+            }
+        }))
+    }
+
     func list(
         completion: @escaping ListCompletion
     ) -> AnyCancellable? {

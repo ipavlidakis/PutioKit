@@ -10,4 +10,5 @@ import Foundation
 enum Constants {
     static let baseURL = URL(string: "https://api.put.io")!.appendingPathComponent("v2")
     static let uploadBaseURL = URL(string: "https://upload.put.io")!.appendingPathComponent("v2")
+    static let shareURL = URL(string: "https://app.put.io/a-gift-from")!
 }
