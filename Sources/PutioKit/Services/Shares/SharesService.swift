@@ -93,7 +93,6 @@ public extension SharesService {
 
         let headers: [URLRequest.HeaderPair] = [
             authenticationHeader,
-            .contentTypeJSON
         ]
 
         guard let request = URLRequest(method: .post, url: url, headers: headers) else {
