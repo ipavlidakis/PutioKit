@@ -21,7 +21,7 @@ public enum PutIOKitError: Error {
     case failedToDownloadContentOfFile
 
     static func isOffline(error: Error) -> Bool {
-        (error as? NSError)?.code == -1009 ?? false
+        (error as NSError).code == -1009
     }
 }
 
