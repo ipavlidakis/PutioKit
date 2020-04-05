@@ -105,7 +105,10 @@ extension URLSession: NetworkHandling {
             .sink(receiveCompletion: { _completion in
                 switch _completion {
                     case .finished: break
-                    case .failure(let error): completion(.failure(error))
+                    case .failure(let error):
+                        let rewrittenError = PutIOKitError.isOffline(error: error) ? PutIOKitError.offline : error
+                        completion(.failure(rewrittenError)
+                    )
                 }
             }, receiveValue: { item in completion(.success(item)) })
     }
@@ -146,7 +149,9 @@ extension URLSession: NetworkHandling {
             .sink(receiveCompletion: { _completion in
                 switch _completion {
                     case .finished: break
-                    case .failure(let error): completion(.failure(error))
+                    case .failure(let error):
+                        let rewrittenError = PutIOKitError.isOffline(error: error) ? PutIOKitError.offline : error
+                        completion(.failure(rewrittenError))
                 }
             }, receiveValue: { item in completion(.success(item)) })
     }

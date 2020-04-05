@@ -10,6 +10,7 @@ import Foundation
 
 public enum PutIOKitError: Error {
 
+    case offline
     case unauthorised
     case requestFailed(statusCode: Int)
     case uploadTaskFailed
@@ -18,6 +19,10 @@ public enum PutIOKitError: Error {
     case parsingFailed
     case invalidResponse(String)
     case failedToDownloadContentOfFile
+
+    static func isOffline(error: Error) -> Bool {
+        (error as? NSError)?.code == -1009 ?? false
+    }
 }
 
 public extension PutIOKitError {
