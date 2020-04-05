@@ -336,6 +336,14 @@ public extension FilesService.Model {
         public let fileIds: [Int]
         public let parentId: Int
 
+        public init(
+            fileIds: [Int],
+            parentId: Int
+        ) {
+            self.fileIds = fileIds
+            self.parentId = parentId
+        }
+
         private enum CodingKeys: String, CodingKey {
             case fileIds = "file_ids"
             case parentId = "parent_id"
@@ -350,6 +358,16 @@ public extension FilesService.Model {
         public let file: Data
         public let filename: String
         public let parentId: Int
+
+        public init(
+            file: Data,
+            filename: String,
+            parentId: Int
+        ) {
+            self.file = file
+            self.filename = filename
+            self.parentId = parentId
+        }
 
         private enum CodingKeys: String, CodingKey {
             case file
@@ -375,6 +393,16 @@ public extension FilesService.Model {
         public let status: Status
         public let percentDone: Int
         public let size: Int
+
+        public init(
+            status: Status,
+            percentDone: Int,
+            size: Int
+        ) {
+            self.status = status
+            self.percentDone = percentDone
+            self.size = size
+        }
 
         private enum CodingKeys: String, CodingKey {
             case status
