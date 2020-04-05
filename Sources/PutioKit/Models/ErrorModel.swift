@@ -10,12 +10,12 @@ import Foundation
 
 public struct ErrorModel: Codable, Hashable, Error {
 
-    let type: String?
-    let message: String
-    let id: String?
-    let uri: String?
-    let status: String?
-    let code: Int?
+    public let type: String?
+    public let message: String
+    public let id: String?
+    public let uri: String?
+    public let status: String?
+    public let code: Int?
 
     init(type: String? = nil,
          message: String,
